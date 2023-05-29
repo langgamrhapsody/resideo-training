@@ -36,16 +36,22 @@
                  <li class="navbar__nav-item">
                      <a class="navbar__nav-item-link" href="#">Contact Us</a>
                  </li>
-
+                 <li class="navbar__nav-item--custom">
+                     <a class="btn navbar__nav-item-link--custom" href="#">
+                         <svg class="profile-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                             <path fill="currentColor"
+                                 d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
+                         </svg>
+                         <p class="profile-name">Langgam Rhapsody</p>
+                     </a>
+                 </li>
              </ul>
-
-
          </div>
-         <div class="navbar__login">
+         <a class="btn navbar__login">
              <svg class="navbar__login-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                  <path fill="currentColor"
                      d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
              </svg>
-         </div>
+         </a>
      </div>
  </nav>
