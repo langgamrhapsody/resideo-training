@@ -1,0 +1,19 @@
+@use 'sass:math';
+@use '../_config.scss' as *;
+
+.box {
+    width: 100%;
+    height: #{math.div(500, 2)}px;
+}
+
+.red {
+    background-color: color(red)
+}
+
+.red-light {
+    background-color: colorMod( color(red), +50% )
+}
+
+.font-size-headline-xl {
+    @include fontSize(headline, xl)
+}
