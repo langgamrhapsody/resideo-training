@@ -11241,8 +11241,7 @@ textarea.form-control-lg {
 }
 .featured-agents__content-item-card {
   width: 100%;
-  height: 150px;
-  background-color: green;
+  height: 300px;
   border-radius: 10px;
 }
 .featured-agents__content-button {
@@ -11269,22 +11268,15 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-image: url("../assets/img/cta-fig-3.jpg");
   background-position: center;
-  background-size: cover;
+  background-size: 100%;
   transition: all ease-in-out 0.4s;
 }
-.try__background:has(.try__content:hover) {
-  transform: scale(1.1);
-}
-.try__container {
+.try__row {
   display: flex;
   justify-content: center;
 }
 .try__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 350px;
-  width: 350px;
+  width: 100%;
   padding: 42px;
   background-color: black;
   color: white;
@@ -11303,8 +11295,14 @@ textarea.form-control-lg {
   opacity: 1;
   padding-left: 100px;
 }
+.try__content:hover .highlight-text {
+  color: #edc170;
+}
 .try__content-text-title {
   font-weight: 700;
+}
+.try__content-text-title .highlight-text {
+  transition: all ease-in-out 0.3s;
 }
 .try__content-text-desc {
   color: grey;
@@ -11317,6 +11315,7 @@ textarea.form-control-lg {
   color: white;
   text-decoration: none;
   transition: all ease-in-out 0.5s;
+  margin-top: 80px;
   cursor: pointer;
 }
 .try__content-button:hover {
