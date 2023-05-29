@@ -11213,11 +11213,6 @@ textarea.form-control-lg {
     padding: 16px 0;
   }
 }
-@media screen and (max-width: 576px) {
-  .navbar .offcanvas__header {
-    justify-content: space-between;
-  }
-}
 .navbar__login {
   display: flex;
   align-items: center;
