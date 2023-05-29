@@ -17,6 +17,18 @@
 // | Timedoor New Standard                   | //
 // |_________________________________________| //
 
+//side line hover style
+%hover-style {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 0;
+  border-radius: 25px;
+  opacity: 0;
+  transition: all ease-in-out 0.5s;
+}
+
 .ratio-item {
   @extend %ratioItem;
 }
@@ -51,7 +63,7 @@
   }
 
   &__scrolled {
-    background: #4527a4a1;
+    background: black;
     backdrop-filter: blur(12px);
     padding: 8px 0;
   }
@@ -199,18 +211,76 @@
   }
 }
 
+.featured-agents {
+  padding: 100px 0;
+  background-color: #f7f7f7;
+
+  &:hover &__content-button {
+    &:after {
+      opacity: 1;
+      padding-left: 50px;
+    }
+  }
+
+  &__content {
+    &-title {
+      font-weight: 700;
+    }
+
+    &-desc {
+      color: grey;
+    }
+
+    &-row {
+      padding: 48px 0;
+    }
+
+    &-item {
+      &-card {
+        width: 100%;
+        height: 150px;
+        background-color: green;
+        border-radius: 10px;
+      }
+    }
+
+    &-button {
+      display: flex;
+      position: relative;
+      color: black;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+
+      &:hover {
+        color: black;
+      }
+
+      &:after {
+        @extend %hover-style;
+        left: 15%;
+        border-bottom: 3px solid black;
+      }
+    }
+  }
+}
+
 .try {
-  padding: 200px 0;
+  overflow: hidden;
 
-  background-repeat: no-repeat;
-  background-image: url("../assets/img/cta-fig-3.jpg");
-  background-position: center;
-  background-size: cover;
+  &__background {
+    padding: 200px 0;
 
-  transition: all ease-in-out 0.4s;
+    background-repeat: no-repeat;
+    background-image: url("../assets/img/cta-fig-3.jpg");
+    background-position: center;
+    background-size: cover;
 
-  &:has(.try__content:hover) {
-    transform: scale(1.1);
+    transition: all ease-in-out 0.4s;
+
+    &:has(.try__content:hover) {
+      transform: scale(1.1);
+    }
   }
 
   &__container {
@@ -237,12 +307,10 @@
       height: 320px;
     }
 
-    &:hover {
-      .try__content-button {
-        &:after {
-          opacity: 1;
-          padding-left: 100px;
-        }
+    &:hover &-button {
+      &:after {
+        opacity: 1;
+        padding-left: 100px;
       }
     }
 
@@ -268,23 +336,12 @@
 
       &:hover {
         color: white;
-
-        // &:after {
-        //   padding-left: 100px;
-        // }
       }
 
       &:after {
-        content: "";
-        position: absolute;
+        @extend %hover-style;
         left: 50%;
-        top: 50%;
-        transform: translateY(-50%);
-        padding-left: 0;
         border-bottom: 3px solid white;
-        border-radius: 25px;
-        opacity: 0;
-        transition: all ease-in-out 0.5s;
       }
     }
   }

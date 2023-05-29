@@ -14,7 +14,6 @@
          <div class="offcanvas offcanvas-end offcanvas__custom " id="offcanvasRight"
              aria-labelledby="offcanvasRightLabel">
              <div class="offcanvas__header">
-                 <img src="./assets/img/logo.png" alt="Logo" width="160" height="auto" class="offcanvas__header-img">
                  <button type="button" class="offcanvas__header-button btn-close btn-close-white"
                      data-bs-dismiss="offcanvas" aria-label="Close"></button>
              </div>

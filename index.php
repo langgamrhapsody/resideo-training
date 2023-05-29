@@ -14,17 +14,18 @@
     <header>
         <!-- Navbar -->
         <?php include_once'navbar.php'; ?>
-
-        <!-- Hero -->
-
     </header>
     <main>
+        <!-- Featured Agents  -->
+        <?php include_once'fourth.php'; ?>
+
+
+        <!-- Search Smarter Section -->
         <?php include_once'fifth.php'; ?>
 
     </main>
     <footer>
         <?php include_once'footer.php'; ?>
-
     </footer>
 
     <script>

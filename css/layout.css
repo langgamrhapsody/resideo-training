@@ -11040,6 +11040,17 @@ textarea.form-control-lg {
   object-fit: contain;
 }
 
+.try__content-button:after, .featured-agents__content-button:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 0;
+  border-radius: 25px;
+  opacity: 0;
+  transition: all ease-in-out 0.5s;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -11069,7 +11080,7 @@ textarea.form-control-lg {
   }
 }
 .navbar__scrolled {
-  background: rgba(69, 39, 164, 0.631372549);
+  background: black;
   backdrop-filter: blur(12px);
   padding: 8px 0;
 }
@@ -11211,7 +11222,49 @@ textarea.form-control-lg {
   }
 }
 
+.featured-agents {
+  padding: 100px 0;
+  background-color: #f7f7f7;
+}
+.featured-agents:hover .featured-agents__content-button:after {
+  opacity: 1;
+  padding-left: 50px;
+}
+.featured-agents__content-title {
+  font-weight: 700;
+}
+.featured-agents__content-desc {
+  color: grey;
+}
+.featured-agents__content-row {
+  padding: 48px 0;
+}
+.featured-agents__content-item-card {
+  width: 100%;
+  height: 150px;
+  background-color: green;
+  border-radius: 10px;
+}
+.featured-agents__content-button {
+  display: flex;
+  position: relative;
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+.featured-agents__content-button:hover {
+  color: black;
+}
+.featured-agents__content-button:after {
+  left: 15%;
+  border-bottom: 3px solid black;
+}
+
 .try {
+  overflow: hidden;
+}
+.try__background {
   padding: 200px 0;
   background-repeat: no-repeat;
   background-image: url("../assets/img/cta-fig-3.jpg");
@@ -11219,7 +11272,7 @@ textarea.form-control-lg {
   background-size: cover;
   transition: all ease-in-out 0.4s;
 }
-.try:has(.try__content:hover) {
+.try__background:has(.try__content:hover) {
   transform: scale(1.1);
 }
 .try__container {
@@ -11264,21 +11317,14 @@ textarea.form-control-lg {
   color: white;
   text-decoration: none;
   transition: all ease-in-out 0.5s;
+  cursor: pointer;
 }
 .try__content-button:hover {
   color: white;
 }
 .try__content-button:after {
-  content: "";
-  position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-  padding-left: 0;
   border-bottom: 3px solid white;
-  border-radius: 25px;
-  opacity: 0;
-  transition: all ease-in-out 0.5s;
 }
 
 .footer {
