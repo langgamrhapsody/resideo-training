@@ -11048,7 +11048,7 @@ textarea.form-control-lg {
   padding-right: 0;
   border-radius: 25px;
   opacity: 0;
-  transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.4s;
 }
 
 .navbar {
@@ -11251,16 +11251,34 @@ textarea.form-control-lg {
 }
 .featured-agents:hover .featured-agents__content-button:after {
   opacity: 1;
-  padding-left: 50px;
+  padding-right: 50px;
 }
 .featured-agents__content-title {
   font-weight: 700;
 }
+@media screen and (max-width: 576px) {
+  .featured-agents__content-title {
+    text-align: center;
+  }
+}
 .featured-agents__content-desc {
   color: grey;
 }
+@media screen and (max-width: 576px) {
+  .featured-agents__content-desc {
+    text-align: center;
+  }
+}
 .featured-agents__content-row {
   padding: 48px 0;
+}
+@media screen and (max-width: 576px) {
+  .featured-agents__content-row {
+    justify-content: center;
+  }
+}
+.featured-agents__content-item {
+  margin-bottom: 56px;
 }
 .featured-agents__content-item-card, .featured-agents__content-item-card--fourth, .featured-agents__content-item-card--third, .featured-agents__content-item-card--second, .featured-agents__content-item-card--first {
   position: relative;
@@ -11271,25 +11289,45 @@ textarea.form-control-lg {
   background-size: cover;
   transition: all ease-in-out 0.3s;
 }
+.featured-agents__content-item-card:hover, .featured-agents__content-item-card--fourth:hover, .featured-agents__content-item-card--third:hover, .featured-agents__content-item-card--second:hover, .featured-agents__content-item-card--first:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+.featured-agents__content-item-card:hover .featured-agents__content-item-card-agent, .featured-agents__content-item-card--fourth:hover .featured-agents__content-item-card-agent, .featured-agents__content-item-card--third:hover .featured-agents__content-item-card-agent, .featured-agents__content-item-card--second:hover .featured-agents__content-item-card-agent, .featured-agents__content-item-card--first:hover .featured-agents__content-item-card-agent {
+  max-height: 100px;
+}
+.featured-agents__content-item-card:hover .featured-agents__content-item-card-agent .agent-name, .featured-agents__content-item-card--fourth:hover .featured-agents__content-item-card-agent .agent-name, .featured-agents__content-item-card--third:hover .featured-agents__content-item-card-agent .agent-name, .featured-agents__content-item-card--second:hover .featured-agents__content-item-card-agent .agent-name, .featured-agents__content-item-card--first:hover .featured-agents__content-item-card-agent .agent-name {
+  padding: 0;
+}
 .featured-agents__content-item-card-agent {
   margin: auto;
   position: absolute;
   left: 50%;
   bottom: -20px;
   transform: translateX(-50%);
-  width: max-content;
+  width: 80%;
+  max-height: 56px;
   padding: 8px;
   background-color: black;
   border-radius: 10px;
+  transition: max-height ease-in-out 0.5s;
+  overflow: hidden;
+}
+.featured-agents__content-item-card-agent:hover {
+  background-color: black;
 }
 .featured-agents__content-item-card-agent .agent-name {
-  text-decoration: none;
   margin: 0;
+  text-decoration: none;
+  padding-top: 8px;
+  padding-bottom: 16px;
   color: white;
   font-size: 14px;
+  transition: all ease-in-out 0.3s;
 }
 .featured-agents__content-item-card-agent .agent-contact {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 4px;
   color: grey;
 }
@@ -11300,6 +11338,7 @@ textarea.form-control-lg {
 .featured-agents__content-item-card-agent .agent-contact__number {
   font-size: 14px;
   text-decoration: none;
+  margin: 0;
 }
 .featured-agents__content-item-card--first {
   background-image: url("/assets/img/agent-1.jpg");
@@ -11315,19 +11354,34 @@ textarea.form-control-lg {
   background-position: center;
   background-image: url("/assets/img/agent-4.jpg");
 }
+@media screen and (max-width: 575px) {
+  .featured-agents__content-item-card, .featured-agents__content-item-card--fourth, .featured-agents__content-item-card--third, .featured-agents__content-item-card--second, .featured-agents__content-item-card--first {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .featured-agents__content-item-card, .featured-agents__content-item-card--fourth, .featured-agents__content-item-card--third, .featured-agents__content-item-card--second, .featured-agents__content-item-card--first {
+    width: 100%;
+  }
+}
 .featured-agents__content-button {
-  display: flex;
   position: relative;
   color: black;
   font-weight: 700;
   text-decoration: none;
+  transition: all ease-in-out 0.4s;
   cursor: pointer;
 }
 .featured-agents__content-button:hover {
-  color: black;
+  color: #edc170;
+}
+.featured-agents__content-button:hover:after {
+  border-color: #edc170;
 }
 .featured-agents__content-button:after {
-  left: 15%;
+  left: 100%;
+  margin-left: 10px;
   border-bottom: 3px solid black;
 }
 
@@ -11343,7 +11397,6 @@ textarea.form-control-lg {
   transition: all ease-in-out 0.4s;
 }
 .try__row {
-  display: flex;
   justify-content: center;
 }
 .try__content {
@@ -11353,18 +11406,15 @@ textarea.form-control-lg {
   background-color: black;
   color: white;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .try__content {
     padding: 24px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .try__content {
     max-width: 300px;
   }
-}
-.try__content:hover .try__content-button {
-  color: #edc170;
 }
 .try__content:hover .try__content-button:after {
   opacity: 1;
@@ -11389,16 +11439,19 @@ textarea.form-control-lg {
   position: relative;
   color: white;
   text-decoration: none;
-  transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.4s;
   cursor: pointer;
 }
 .try__content-button:hover {
-  color: white;
+  color: #edc170;
+}
+.try__content-button:hover:after {
+  border-color: #edc170;
 }
 .try__content-button:after {
   left: 100%;
   margin-left: 10px;
-  border-bottom: 3px solid #edc170;
+  border-bottom: 3px solid white;
 }
 
 .footer {
@@ -11474,11 +11527,6 @@ textarea.form-control-lg {
   letter-spacing: 0.9px;
   line-height: 2;
   color: white;
-}
-@media screen and (min-width: 576px) and (max-width: 768px) {
-  .footer__content-item-desc {
-    font-size: 12px;
-  }
 }
 .footer__content-item-social {
   display: flex;

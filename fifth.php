@@ -2,7 +2,7 @@
         <div class="try__background">
             <div class="try__container container">
                 <div class="try__row row">
-                    <div class="try__item col-12 col-sm-7 col-md-6 col-lg-4">
+                    <div class="try__item col-12 col-sm-7 col-md-6 col-lg-5 col-xl-4">
                         <div class="try__content">
                             <div class="try__content-text">
                                 <h3 class="try__content-text-title">Search <span class="highlight-text">Smarter</span>,
