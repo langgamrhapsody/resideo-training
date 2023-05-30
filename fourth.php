@@ -5,7 +5,9 @@
             <p class="featured-agents__content-desc">Meet the best real estate agents</p>
             <div class="featured-agents__content-row row">
                 <div class="featured-agents__content-item col-10 col-sm-6 col-lg-3">
-                    <div class="featured-agents__content-item-card--first">
+                    <div class="featured-agents__content-item-card">
+                        <img class="featured-agents__content-item-card-img--first" src="./assets/img/agent-1.jpg"
+                            alt="agent-1">
                         <a href="#" class="btn featured-agents__content-item-card-agent">
                             <p class="agent-name">Scott Baldwin</p>
                             <div class="agent-contact">
@@ -20,7 +22,9 @@
                     </div>
                 </div>
                 <div class="featured-agents__content-item col-10 col-sm-6 col-lg-3">
-                    <div class="featured-agents__content-item-card--second">
+                    <div class="featured-agents__content-item-card">
+                        <img class="featured-agents__content-item-card-img--second" src="./assets/img/agent-2.jpg"
+                            alt="agent-2">
                         <a href="#" class="btn featured-agents__content-item-card-agent">
                             <p class="agent-name">Alayna Becker</p>
                             <div class="agent-contact">
@@ -35,7 +39,9 @@
                     </div>
                 </div>
                 <div class="featured-agents__content-item col-10 col-sm-6 col-lg-3">
-                    <div class="featured-agents__content-item-card--third">
+                    <div class="featured-agents__content-item-card">
+                        <img class="featured-agents__content-item-card-img--third" src="./assets/img/agent-3.jpg"
+                            alt="agent-3">
                         <a href="#" class="btn featured-agents__content-item-card-agent">
                             <p class="agent-name">Melvin Blackwell</p>
                             <div class="agent-contact">
@@ -50,7 +56,9 @@
                     </div>
                 </div>
                 <div class="featured-agents__content-item col-10 col-sm-6 col-lg-3">
-                    <div class="featured-agents__content-item-card--fourth">
+                    <div class="featured-agents__content-item-card">
+                        <img class="featured-agents__content-item-card-img--fourth" src="./assets/img/agent-4.jpg"
+                            alt="agent-4">
                         <a href="#" class="btn featured-agents__content-item-card-agent">
                             <p class="agent-name">Erika Tillman</p>
                             <div class="agent-contact">
@@ -65,7 +73,7 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="featured-agents__content-button">SEE ALL AGENTS</a>
+            <a href="#" class="btn section-button--agents">See all agents</a>
             </a>
         </div>
     </div>

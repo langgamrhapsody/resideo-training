@@ -9,10 +9,9 @@
                                     <br> From Anywhere
                                 </h3>
                                 <p class="try__content-text-desc">Power your search with our Resideo real estate
-                                    platform,
-                                    for timely listings and a seamless experience</p>
+                                    platform, for timely listings and a seamless experience</p>
                             </div>
-                            <a class="btn try__content-button">SEARCH NOW</a>
+                            <a class="btn section-button--try">search now</a>
                         </div>
                     </div>
                 </div>
