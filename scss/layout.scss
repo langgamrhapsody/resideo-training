@@ -269,6 +269,154 @@ body {
   }
 }
 
+.hero {
+  position: relative;
+  &__container {
+    padding: 200px 0;
+
+    background: color(bg, secondary);
+    background-size: 50% 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+
+    &:hover .section-button--hero {
+      &:after {
+        opacity: 1;
+        padding-right: 50px;
+      }
+    }
+  }
+
+  &__swiper {
+    &--left {
+      @extend .hero__swiper;
+
+      .hero-text-swiper {
+        margin: unset;
+        width: 65%;
+        color: white;
+
+        @media screen and (max-width: 992px) {
+          width: unset;
+        }
+
+        // @media screen and (max-width: 768px) {
+        //   position: absolute;
+        //   bottom: 0;
+        //   left: 50%;
+        //   transform: translateX(-50%);
+        // }
+
+        &__title {
+          font-weight: 700;
+          margin-bottom: 24px;
+        }
+
+        &__desc {
+          margin-bottom: 56px;
+          color: colorMod(white, -20%);
+        }
+
+        &__price {
+          margin-bottom: 72px;
+          font-weight: 600;
+          font-size: 24px;
+        }
+
+        .section-button--hero {
+          @extend .section-button;
+          color: white;
+
+          &:after {
+            border: 2px solid white;
+          }
+        }
+      }
+    }
+    &--right {
+      @extend .hero__swiper;
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      padding: 0;
+
+      .hero-img-swiper {
+        height: 100%;
+
+        &__img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+
+          @media screen and (max-width: 768px) {
+            filter: brightness(0.7);
+          }
+        }
+      }
+    }
+
+    &-button {
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      z-index: 999;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 16px;
+      padding: 24px;
+      background-color: black;
+
+      @media screen and (max-width: 992px) {
+        left: 40%;
+        transform: translateX(-40%);
+      }
+
+      @media screen and (width: 992px) {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      @media screen and (max-width: 768px) {
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: unset;
+      }
+
+      @media screen and (width: 768px) {
+        left: 40%;
+        transform: translateX(-40%);
+        background-color: black;
+      }
+
+      .hero-swiper-button-next {
+        position: unset;
+        width: unset;
+        height: unset;
+        margin-top: unset;
+        color: white;
+
+        &:after {
+          content: unset;
+        }
+      }
+
+      .hero-swiper-button-prev {
+        position: unset;
+        width: unset;
+        height: unset;
+        margin-top: unset;
+        color: white;
+
+        &:after {
+          content: unset;
+        }
+      }
+    }
+  }
+}
+
 .featured-properties {
   padding: 100px 0;
 
@@ -467,9 +615,6 @@ body {
     // padding-left: 200px;
     color: white;
 
-    &-container {
-    }
-
     &-title {
       font-weight: 700;
     }
@@ -537,40 +682,51 @@ body {
       }
     }
 
-    .swiper-button-prev {
-      left: 45%;
-      bottom: -100px;
-      top: unset;
-      z-index: 99999;
-
-      color: black;
-
-      &:after {
-        content: unset;
-      }
+    &-button {
+      position: absolute;
+      bottom: 5%;
+      left: 68%;
+      z-index: 999;
+      transform: translateX(-68%);
+      display: flex;
+      gap: 16px;
+      padding: 24px;
 
       @media screen and (max-width: 992px) {
-        color: white;
-        bottom: -70px;
-        left: 40%;
-      }
-    }
-
-    .swiper-button-next {
-      right: 45%;
-      bottom: -100px;
-      top: unset;
-      z-index: 99999;
-
-      color: black;
-      &:after {
-        content: unset;
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
       }
 
-      @media screen and (max-width: 992px) {
-        color: white;
-        bottom: -70px;
-        right: 40%;
+      .choose-swiper-button-next {
+        position: unset;
+        width: unset;
+        height: unset;
+        margin-top: unset;
+        color: black;
+
+        &:after {
+          content: unset;
+        }
+
+        @media screen and (max-width: 992px) {
+          color: white;
+        }
+      }
+
+      .choose-swiper-button-prev {
+        position: unset;
+        width: unset;
+        height: unset;
+        margin-top: unset;
+        color: black;
+
+        &:after {
+          content: unset;
+        }
+        @media screen and (max-width: 992px) {
+          color: white;
+        }
       }
     }
 
