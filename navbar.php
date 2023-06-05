@@ -34,7 +34,7 @@
                      <a class="navbar__nav-item-link disabled">Themes</a>
                  </li>
                  <li class="navbar__nav-item">
-                     <a class="navbar__nav-item-link" href="#">Contact Us</a>
+                     <a class="navbar__nav-item-link" href="/contact.php">Contact Us</a>
                  </li>
                  <li class="navbar__nav-item--custom">
                      <a class="btn navbar__nav-item-link--custom" href="#">

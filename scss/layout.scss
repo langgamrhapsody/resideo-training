@@ -67,7 +67,7 @@ body {
   left: 0;
   z-index: 999;
   transition: all ease-in-out 0.4s;
-  padding: 40px 0;
+  padding: 24px 0;
 
   &__brand {
     color: white;
@@ -192,9 +192,8 @@ body {
       flex-wrap: wrap;
 
       @media screen and (width: 992px) {
-        align-items: end !important;
+        align-items: center !important;
         padding: 0 !important;
-        flex-wrap: wrap !important;
       }
 
       @media screen and (max-width: 992px) {
@@ -255,6 +254,9 @@ body {
 
     @media screen and (max-width: 992px) {
       display: none;
+    }
+    @media screen and (width: 992px) {
+      display: flex;
     }
 
     &-svg {
@@ -1113,6 +1115,230 @@ body {
       &-desc {
         display: inline-block;
         margin-right: 6px;
+      }
+    }
+  }
+}
+
+.contact-us {
+  padding: 120px 0;
+
+  &__content {
+    &-title {
+      font-weight: 700;
+
+      @media screen and (max-width: 576px) {
+        text-align: center;
+      }
+    }
+
+    &-desc {
+      color: grey;
+      @media screen and (max-width: 576px) {
+        text-align: center;
+      }
+    }
+  }
+
+  &__mid {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 200px 0;
+    margin: 48px 0;
+    margin-bottom: 200px;
+    background-image: url("/assets/img/contact-bg-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 300px;
+    }
+    @media screen and (max-width: 420px) {
+      margin-bottom: 400px;
+    }
+
+    &-card {
+      position: absolute;
+      // bottom: 0;
+      max-width: inherit;
+      width: 100%;
+      padding: 56px 48px;
+      background-color: black;
+      z-index: 1;
+      color: white;
+
+      @media screen and (max-width: 768px) {
+        max-width: unset;
+        left: 0;
+        padding: 32px 48px;
+      }
+
+      &-col {
+        @media screen and (max-width: 768px) {
+          margin-bottom: 24px;
+        }
+      }
+
+      &-title {
+        margin-bottom: 40px;
+
+        @media screen and (max-width: 768px) {
+          margin-bottom: 20px;
+        }
+      }
+
+      &-content {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        &-title {
+          margin: 0;
+          font-size: 20px;
+          font-weight: 700;
+        }
+        &-address {
+          margin: 0;
+          color: colorMod(white, -20%);
+
+          @media screen and (max-width: 992px) {
+            font-size: 14px;
+          }
+
+          @media screen and (max-width: 576px) {
+            font-size: 12px;
+          }
+        }
+        &-contact {
+          color: colorMod(white, -40%);
+          @media screen and (max-width: 992px) {
+            font-size: 14px;
+          }
+          @media screen and (max-width: 576px) {
+            font-size: 12px;
+          }
+
+          & p {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &__row {
+    flex-direction: row-reverse;
+  }
+
+  &__left {
+    &-content {
+      &-title {
+        font-weight: 700;
+        margin: 0;
+      }
+      &-form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 21px;
+        margin: 32px 0;
+
+        @media screen and (max-width: 1200px) {
+          gap: 27px;
+        }
+        @media screen and (max-width: 992px) {
+          gap: 16px;
+        }
+      }
+      &-input {
+        width: 48%;
+        padding: 12px;
+        border: 1px solid #efefef;
+        @media screen and (max-width: 1200px) {
+          width: 47%;
+        }
+        @media screen and (max-width: 992px) {
+          width: 100%;
+        }
+      }
+
+      &-select {
+        @extend .contact-us__left-content-input;
+        appearance: none;
+        background: #fff url("/assets/svg/arrow.svg") right 0.75rem center/8px
+          10px no-repeat;
+      }
+
+      &-textarea {
+        width: 100%;
+        height: 120px;
+        padding: 10px;
+        border: 1px solid #efefef;
+      }
+
+      &-button {
+        background-color: color(bg, secondary);
+        color: white;
+        font-size: 12px;
+        font-weight: 800;
+        text-transform: uppercase;
+        padding: 12px 24px;
+
+        &:hover {
+          background-color: black;
+        }
+      }
+    }
+  }
+
+  &__right {
+    &-content {
+      &-header {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &-body {
+        width: 100%;
+        height: 255px;
+        margin: 32px 0;
+        @media screen and (max-width: 1200px) {
+          height: 265px;
+        }
+
+        @media screen and (max-width: 992px) {
+          height: 375px;
+        }
+
+        @media screen and (max-width: 768px) {
+          width: unset;
+          height: unset;
+          aspect-ratio: 1/1;
+        }
+      }
+
+      &-title {
+        font-weight: 700;
+        margin: 0;
+      }
+
+      &-map {
+        width: 100%;
+        height: 100%;
+      }
+
+      &-select {
+        width: 30%;
+        padding: 5px;
+
+        background: #fff url("/assets/svg/arrow.svg") right 0.75rem center/8px
+          10px no-repeat;
+        border: 1px solid #efefef;
+        appearance: none;
+
+        @media screen and (max-width: 992px) {
+          width: 40%;
+        }
       }
     }
   }
