@@ -60,6 +60,12 @@ body {
   @extend %ratioItem;
 }
 
+.custom-nav {
+  position: unset !important;
+  background-color: black !important;
+  padding: 8px 0 !important;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -363,7 +369,7 @@ body {
       position: absolute;
       bottom: 10%;
       left: 50%;
-      z-index: 999;
+      z-index: 5;
       transform: translateX(-50%);
       display: flex;
       gap: 16px;
@@ -1344,6 +1350,159 @@ body {
   }
 }
 
+.listing-page {
+  display: flex;
+
+  .property {
+    max-height: 100vh;
+    max-width: 50%;
+    width: 100%;
+
+    padding-top: 30px;
+
+    overflow: scroll;
+    &__container {
+      padding: 0px 5%;
+    }
+
+    &__col {
+      padding: 0 4px;
+    }
+
+    &__header {
+      &-input {
+        padding: 8px;
+        width: 100%;
+        outline: none;
+        border: 1px solid #efefef;
+        background: #fff url("/assets/svg/search.svg") right 0.75rem center/14px
+          no-repeat;
+      }
+
+      &-select {
+        padding: 8px;
+        width: 100%;
+        outline: none;
+        border: 1px solid #efefef;
+
+        background: #fff url("/assets/svg/arrow.svg") right 0.75rem center/8px
+          10px no-repeat;
+        appearance: none;
+      }
+
+      &-button {
+        background-color: white;
+        border: 1px solid #efefef;
+        width: 100%;
+        padding: 8px;
+      }
+    }
+
+    &__body {
+      padding-bottom: 48px;
+      &-header {
+        padding-top: 24px;
+      }
+
+      &-content {
+        &-row {
+          padding-top: 48px;
+          @media screen and (max-width: 576px) {
+            justify-content: center;
+          }
+        }
+
+        &-item {
+          margin-bottom: 24px;
+          &-card {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            border-radius: 10px;
+            overflow: hidden;
+
+            transition: all ease-in-out 0.3s;
+
+            &:hover {
+              box-shadow: 0 0 12px rgba(33, 33, 33, 0.4);
+              & .property__body-content-item-card-desc {
+                bottom: 8px;
+
+                .properties {
+                  &__text {
+                    margin-bottom: 2px;
+                  }
+                }
+              }
+            }
+
+            &-img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: center;
+              border-radius: 10px;
+              filter: brightness(0.9);
+            }
+
+            &-desc {
+              position: absolute;
+              bottom: -65px;
+              padding-left: 16px;
+              transition: all ease-in-out 0.3s;
+              .properties {
+                &__text {
+                  color: white;
+                  margin-bottom: 8px;
+                  transition: all ease-in-out 0.5s;
+                  &--title {
+                    @extend .properties__text;
+                    color: colorMod(white, -10%);
+                    font-weight: 500;
+                  }
+                  &--price {
+                    @extend .properties__text;
+                    font-size: 18px;
+                    font-weight: 800;
+                  }
+                  &--attrs {
+                    @extend .properties__text;
+                    color: colorMod(white, -20%);
+                  }
+                }
+              }
+            }
+
+            @media screen and (max-width: 575px) {
+              width: 100%;
+            }
+
+            @media screen and (max-width: 480px) {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      &-pagination {
+        display: flex;
+        gap: 16px;
+      }
+    }
+  }
+
+  .property-map {
+    max-width: 50%;
+    width: 100%;
+    height: auto;
+
+    &__iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
 .footer {
   position: relative;
 
@@ -1516,5 +1675,14 @@ body {
       width: 32px;
       height: 32px;
     }
+  }
+}
+
+.second-footer {
+  background-color: black;
+  color: white;
+  padding: 16px 0;
+  & p {
+    margin: 0;
   }
 }
