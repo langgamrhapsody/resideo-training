@@ -9,8 +9,13 @@ window.addEventListener("scroll", function () {
 });
 
 //navbar active
-
 const currentPage = window.location.pathname;
 if (currentPage === "/property.php") {
   nav.classList.add("custom-nav");
+}
+
+//body
+const body = document.getElementsByTagName("body")[0];
+if (currentPage === "/property.php") {
+  body.style.overflow = "hidden";
 }

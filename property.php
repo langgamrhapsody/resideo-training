@@ -13,6 +13,18 @@
 
 <body>
 
+    <?php
+    $properties = [
+        ['name' => 'Chic Apartment in Downtown', 'price' => "$890,000", 'img' => 'prop-4-1-gallery', 'detail' => '2 BD | 2 BA | 920SE'],
+        ['name' => 'Villa Luna in Bali', 'price' => "$560,000", 'img' => 'prop-5-1-gallery', 'detail' => '1 BD | 1 PP | 312VR'],
+        ['name' => 'Hotel Margo in Dubai', 'price' => "$320,000", 'img' => 'prop-6-1-gallery', 'detail' => '1 BD | 1 JJ | 111RR'],
+        ['name' => 'Prestige House in LI', 'price' => "$1,000,000", 'img' => 'prop-10-1-gallery', 'detail' => '3 BD | 3 BA | 1000SE'],
+        ['name' => 'Lux Motel in San', 'price' => "$110,000", 'img' => 'prop-11-1-gallery', 'detail' => '1 BD | 1 BA | 11BE'],
+        ['name' => 'Royal Room in Lux', 'price' => "$200,000", 'img' => 'prop-12-1-gallery', 'detail' => '3 BD | 3 BA | 01BE'],
+
+    ]
+    ?>
+
 
     <header>
         <!-- Navbar -->
@@ -21,136 +33,96 @@
     <main>
         <!-- Featured Agents  -->
         <div class="listing-page">
-            <div class="property">
-                <div class="property__container ">
-                    <div class="property__header">
-                        <div class="property__row row">
-                            <div class="property__col col-3">
-                                <select class="property__header-select">
-                                    <option selected disabled value="">Buy</option>
-                                </select>
-                            </div>
-                            <div class="property__col col-8">
-                                <input class="property__header-input" type="text" name="search" id="search"
-                                    placeholder="Search by City, Neighborhood, or Address">
-                            </div>
-                            <div class="property__col col-1">
-                                <button type="button" class="btn property__header-button">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
-                                        <path
-                                            d="M3.9 54.9C10.5 40.9 24.5 32 40 32H472c15.5 0 29.5 8.9 36.1 22.9s4.6 30.5-5.2 42.5L320 320.9V448c0 12.1-6.8 23.2-17.7 28.6s-23.8 4.3-33.5-3l-64-48c-8.1-6-12.8-15.5-12.8-25.6V320.9L9 97.3C-.7 85.4-2.8 68.8 3.9 54.9z" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="property__body">
-                        <div class="property__body-header">
-                            <div class="property__row row">
-                                <div class="property__col col-8">
-                                    <h5 class="property__body-header-title">1,684 Results</h5>
+            <div class="listing-page__row row">
+                <div class="listing-page__col col-12 col-md-6">
+                    <div class="property">
+                        <div class="property__container ">
+                            <div class="property__header">
+                                <div class="property__row row">
+                                    <div class="property__col col-3">
+                                        <select class="property__header-select">
+                                            <option selected disabled value="">Buy</option>
+                                        </select>
+                                    </div>
+                                    <div class="property__col col-7 col-lg-8">
+                                        <input class="property__header-input" type="text" name="search" id="search"
+                                            placeholder="Search by City, Neighborhood, or Address">
+                                    </div>
+                                    <div class="property__col col-2 col-lg-1">
+                                        <button type="button" class="btn property__header-button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                                                <path
+                                                    d="M3.9 54.9C10.5 40.9 24.5 32 40 32H472c15.5 0 29.5 8.9 36.1 22.9s4.6 30.5-5.2 42.5L320 320.9V448c0 12.1-6.8 23.2-17.7 28.6s-23.8 4.3-33.5-3l-64-48c-8.1-6-12.8-15.5-12.8-25.6V320.9L9 97.3C-.7 85.4-2.8 68.8 3.9 54.9z" />
+                                            </svg>
+                                        </button>
+                                    </div>
                                 </div>
-                                <div class="property__col col-3">
-                                    <select class="property__header-select">
-                                        <option selected disabled value="">Buy</option>
-                                    </select>
+                                <div class="property__row row">
+                                    <div class="property__col col-7 col-lg-8">
+                                        <h5 class="property__body-header-title">1,684 Results</h5>
+                                    </div>
+                                    <div class="property__col col-3">
+                                        <select class="property__header-select">
+                                            <option selected disabled value="">Sort</option>
+                                        </select>
+                                    </div>
+                                    <div class="property__col col-2 col-lg-1">
+                                        <button type="button" class="btn property__header-button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                                                <path
+                                                    d="M3.9 54.9C10.5 40.9 24.5 32 40 32H472c15.5 0 29.5 8.9 36.1 22.9s4.6 30.5-5.2 42.5L320 320.9V448c0 12.1-6.8 23.2-17.7 28.6s-23.8 4.3-33.5-3l-64-48c-8.1-6-12.8-15.5-12.8-25.6V320.9L9 97.3C-.7 85.4-2.8 68.8 3.9 54.9z" />
+                                            </svg>
+                                        </button>
+                                    </div>
                                 </div>
-                                <div class="property__col col-1">
-                                    <button type="button" class="btn property__header-button">
-                                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
-                                            <path
-                                                d="M3.9 54.9C10.5 40.9 24.5 32 40 32H472c15.5 0 29.5 8.9 36.1 22.9s4.6 30.5-5.2 42.5L320 320.9V448c0 12.1-6.8 23.2-17.7 28.6s-23.8 4.3-33.5-3l-64-48c-8.1-6-12.8-15.5-12.8-25.6V320.9L9 97.3C-.7 85.4-2.8 68.8 3.9 54.9z" />
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
 
-                        </div>
-                        <div class="property__body-content-row row row-cols-1 row-cols-sm-2 ">
-                            <div class="property__body-content-item col-10 col-sm-6 ">
-                                <div class="property__body-content-item-card">
-                                    <img class="property__body-content-item-card-img"
-                                        src="./assets/img/prop-4-1-gallery.jpg" alt="props-1">
-                                    <div class="property__body-content-item-card-desc">
-                                        <p class="properties__text--title">Chic Apartment in Downtown</p>
-                                        <p class="properties__text--price">$890,000</p>
-                                        <p class="properties__text--attrs">2 BD | 2 BA | 920 SE</p>
-                                    </div>
-                                </div>
                             </div>
-                            <div class="property__body-content-item col-10 col-sm-6 ">
-                                <div class="property__body-content-item-card">
-                                    <img class="property__body-content-item-card-img"
-                                        src="./assets/img/prop-5-1-gallery.jpg" alt="props-2">
-                                    <div class="property__body-content-item-card-desc">
-                                        <p class="properties__text--title">Chic Apartment in Downtown</p>
-                                        <p class="properties__text--price">$890,000</p>
-                                        <p class="properties__text--attrs">2 BD | 2 BA | 920 SE</p>
+                            <div class="property__body">
+                                <div class="property__body-content-row row row-cols-1 row-cols-lg-2 ">
+                                    <?php foreach($properties as $property) : ?>
+                                    <div class="property__body-content-item col-12 col-lg-6 ">
+                                        <div class="property__body-content-item-card">
+                                            <img class="property__body-content-item-card-img"
+                                                src="<?php echo "./assets/img/" . $property['img'] . ".jpg"; ?>"
+                                                alt="<?php echo $property['img']; ?>">
+                                            <div class="property__body-content-item-card-desc">
+                                                <p class="properties__text--title"><?php echo $property['name']; ?></p>
+                                                <p class="properties__text--price"><?php echo $property['price']; ?></p>
+                                                <p class="properties__text--attrs"><?php echo $property['detail']; ?>
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
+                                    <?php endforeach ?>
                                 </div>
-                            </div>
-                            <div class="property__body-content-item col-10 col-sm-6 ">
-                                <div class="property__body-content-item-card">
-                                    <img class="property__body-content-item-card-img"
-                                        src="./assets/img/prop-6-1-gallery.jpg" alt="prop-3">
-                                    <div class="property__body-content-item-card-desc">
-                                        <p class="properties__text--title">Chic Apartment in Downtown</p>
-                                        <p class="properties__text--price">$890,000</p>
-                                        <p class="properties__text--attrs">2 BD | 2 BA | 920 SE</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="property__body-content-item col-10 col-sm-6 ">
-                                <div class="property__body-content-item-card">
-                                    <img class="property__body-content-item-card-img"
-                                        src="./assets/img/prop-10-1-gallery.jpg" alt="props-4">
-                                    <div class="property__body-content-item-card-desc">
-                                        <p class="properties__text--title">Chic Apartment in Downtown</p>
-                                        <p class="properties__text--price">$890,000</p>
-                                        <p class="properties__text--attrs">2 BD | 2 BA | 920 SE</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="property__body-content-item col-10 col-sm-6 ">
-                                <div class="property__body-content-item-card">
-                                    <img class="property__body-content-item-card-img"
-                                        src="./assets/img/prop-11-1-big.jpg" alt="prop-5">
-                                    <div class="property__body-content-item-card-desc">
-                                        <p class="properties__text--title">Chic Apartment in Downtown</p>
-                                        <p class="properties__text--price">$890,000</p>
-                                        <p class="properties__text--attrs">2 BD | 2 BA | 920 SE</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="property__body-content-item col-10 col-sm-6 ">
-                                <div class="property__body-content-item-card">
-                                    <img class="property__body-content-item-card-img"
-                                        src="./assets/img/prop-12-1-gallery.jpg" alt="prop-6">
-                                    <div class="property__body-content-item-card-desc">
-                                        <p class="properties__text--title">Chic Apartment in Downtown</p>
-                                        <p class="properties__text--price">$890,000</p>
-                                        <p class="properties__text--attrs">2 BD | 2 BA | 920 SE</p>
-                                    </div>
+                                <div class="property__body-pagination">
+                                    <button class="btn">1</button>
+                                    <button class="btn">2</button>
+                                    <button class="btn">3</button>
+                                    <button class="btn">Next</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="property__body-pagination">
-                            <button class="btn">1</button>
-                            <button class="btn">2</button>
-                            <button class="btn">3</button>
-                            <button class="btn">Next</button>
+                        <div class="second-footer">
+                            <div class="second-footer__container container">
+                                <div class="second-footer__copyright">
+                                    <p class="second-footer__copyright-text">© Resideo. All Rights Reserved. 2019</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <?php include_once 'secondaryFooter.php'; ?>
+                <div class="listing-page__col col-12 col-md-6">
+                    <div class="property-map">
+                        <iframe class="property-map__iframe"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.1041217723973!2d115.23787957502128!3d-8.68164788840348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd240f88bb37a69%3A0xdf8443f1fabfe305!2sPT.Timedoor%20Indonesia!5e0!3m2!1sen!2sid!4v1685931131734!5m2!1sen!2sid"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
 
             </div>
-            <div class="property-map">
-                <iframe class="property-map__iframe"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.1041217723973!2d115.23787957502128!3d-8.68164788840348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd240f88bb37a69%3A0xdf8443f1fabfe305!2sPT.Timedoor%20Indonesia!5e0!3m2!1sen!2sid!4v1685931131734!5m2!1sen!2sid"
-                    style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+
         </div>
 
     </main>
