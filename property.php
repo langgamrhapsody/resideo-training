@@ -8,7 +8,7 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link href="./css/layout.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <title>Resideo - Contact Us</title>
+    <title>Resideo - Our Properties</title>
 </head>
 
 <body>
@@ -103,13 +103,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="second-footer">
-                            <div class="second-footer__container container">
-                                <div class="second-footer__copyright">
-                                    <p class="second-footer__copyright-text">© Resideo. All Rights Reserved. 2019</p>
-                                </div>
-                            </div>
-                        </div>
+                        <?php include_once 'secondaryFooter.php'; ?>
+
                     </div>
                 </div>
                 <div class="listing-page__col col-12 col-md-6">

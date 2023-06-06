@@ -1,3 +1,14 @@
+<?php
+    $properties = [
+        ['name' => 'Chic Apartment in Downtown', 'price' => "$890,000", 'img' => 'prop-4-1-gallery', 'detail' => '2 BD | 2 BA | 920SE'],
+        ['name' => 'Villa Luna in Bali', 'price' => "$560,000", 'img' => 'prop-5-1-gallery', 'detail' => '1 BD | 1 PP | 312VR'],
+        ['name' => 'Hotel Margo in Dubai', 'price' => "$320,000", 'img' => 'prop-6-1-gallery', 'detail' => '1 BD | 1 JJ | 111RR'],
+        ['name' => 'Prestige House in LI', 'price' => "$1,000,000", 'img' => 'prop-10-1-gallery', 'detail' => '3 BD | 3 BA | 1000SE'],
+        ['name' => 'Lux Motel in San', 'price' => "$110,000", 'img' => 'prop-11-1-gallery', 'detail' => '1 BD | 1 BA | 11BE'],
+        ['name' => 'Royal Room in Lux', 'price' => "$200,000", 'img' => 'prop-12-1-gallery', 'detail' => '3 BD | 3 BA | 01BE'],
+    ]
+    ?>
+
 <div class="hero">
     <div class="hero__container">
         <div class="container">
@@ -5,48 +16,28 @@
                 <div class="hero__swiper--right col-12 col-md-7 col-lg-6 ">
                     <div class="swiper hero-img-swiper">
                         <div class="swiper-wrapper">
+                            <?php foreach($properties as $property) : ?>
                             <div class="swiper-slide">
-                                <img class="hero-img-swiper__img" src="./assets/img/hero-prop-1.jpg" alt="hero-prop-1">
+                                <img class="hero-img-swiper__img"
+                                    src="<?php echo "./assets/img/" . $property['img'] . ".jpg"; ?>"
+                                    alt="<?php echo $property['img']; ?>">
                             </div>
-                            <div class="swiper-slide">
-                                <img class="hero-img-swiper__img" src="./assets/img/hero-prop-2.jpg" alt="hero-prop-2">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="hero-img-swiper__img" src="./assets/img/hero-prop-3.jpg" alt="hero-prop-3">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="hero-img-swiper__img" src="./assets/img/hero-prop-4.jpg" alt="hero-prop-4">
-                            </div>
+                            <?php endforeach ?>
                         </div>
                     </div>
                 </div>
                 <div class="hero__swiper--left col-12 col-md-5 col-lg-6">
                     <div class="swiper hero-text-swiper">
                         <div class="swiper-wrapper">
+                            <?php foreach($properties as $property) : ?>
                             <div class="swiper-slide">
-                                <h2 class="hero-text-swiper__title">Colorful Little Hotel</h2>
-                                <p class="hero-text-swiper__desc">1 BD | 1 BA | 500 SF</p>
-                                <p class="hero-text-swiper__price">$2,675</p>
-                                <a href="#" class="section-button--hero">View Details</a>
+                                <h2 class="hero-text-swiper__title"><?php echo $property['name']; ?></h2>
+                                <p class="hero-text-swiper__desc"><?php echo $property['detail']; ?></p>
+                                <p class="hero-text-swiper__price"><?php echo $property['price']; ?></p>
+                                <a href="/detail.php" class="section-button--hero">View Details</a>
                             </div>
-                            <div class="swiper-slide">
-                                <h2 class="hero-text-swiper__title">Colorful Little Room</h2>
-                                <p class="hero-text-swiper__desc">1 BD | 1 BA | 500 SF</p>
-                                <p class="hero-text-swiper__price">$2,675</p>
-                                <a href="#" class="section-button--hero">View Details</a>
-                            </div>
-                            <div class="swiper-slide">
-                                <h2 class="hero-text-swiper__title">Colorful Little Apartment</h2>
-                                <p class="hero-text-swiper__desc">1 BD | 1 BA | 500 SF</p>
-                                <p class="hero-text-swiper__price">$2,675</p>
-                                <a href="#" class="section-button--hero">View Details</a>
-                            </div>
-                            <div class="swiper-slide">
-                                <h2 class="hero-text-swiper__title">Colorful Little House</h2>
-                                <p class="hero-text-swiper__desc">1 BD | 1 BA | 500 SF</p>
-                                <p class="hero-text-swiper__price">$2,675</p>
-                                <a href="#" class="section-button--hero">View Details</a>
-                            </div>
+                            <?php endforeach ?>
+
 
                         </div>
                     </div>
