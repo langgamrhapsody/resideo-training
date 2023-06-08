@@ -13,8 +13,8 @@
 <div class="featured-properties">
     <div class="featured-properties__container container">
         <div class="featured-properties__content">
-            <h3 class="featured-properties__content-title">Featured Properties</h3>
-            <p class="featured-properties__content-desc">Browse our latest hot offers</p>
+            <h3 class="section-title">Featured Properties</h3>
+            <p class="section-desc">Browse our latest hot offers</p>
             <div class="featured-properties__content-row row row-cols-1 row-cols-sm-2 row-cols-lg-3">
                 <?php foreach($properties as $property) : ?>
 

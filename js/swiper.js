@@ -6,6 +6,7 @@ const chooseSwiper = new Swiper(".choose-swiper", {
     nextEl: ".choose-swiper-button-next",
     prevEl: ".choose-swiper-button-prev",
   },
+
   // Default parameters
   slidesPerView: 1,
   loop: false,
@@ -38,6 +39,28 @@ const heroTextSwiper = new Swiper(".hero-text-swiper", {
     nextEl: ".hero-swiper-button-next",
     prevEl: ".hero-swiper-button-prev",
   },
+
+  pagination: {
+    el: ".hero__swiper-pagination",
+    type: "fraction",
+    formatFractionCurrent: function (number) {
+      return ("0" + number).slice(-2);
+    },
+    formatFractionTotal: function (number) {
+      return ("0" + number).slice(-2);
+    },
+    renderFraction: function (currentClass, totalClass) {
+      return (
+        '<span class="' +
+        currentClass +
+        '"></span>' +
+        " / " +
+        '<span class="' +
+        totalClass +
+        '"></span>'
+      );
+    },
+  },
   // Default parameters
   slidesPerView: 1,
   loop: true,
@@ -64,6 +87,28 @@ const heroImgSwiper = new Swiper(".hero-img-swiper", {
   navigation: {
     nextEl: ".hero-swiper-button-next",
     prevEl: ".hero-swiper-button-prev",
+  },
+
+  pagination: {
+    el: ".hero__swiper-pagination",
+    type: "fraction",
+    formatFractionCurrent: function (number) {
+      return ("0" + number).slice(-2);
+    },
+    formatFractionTotal: function (number) {
+      return ("0" + number).slice(-2);
+    },
+    renderFraction: function (currentClass, totalClass) {
+      return (
+        '<span class="' +
+        currentClass +
+        '"></span>' +
+        " / " +
+        '<span class="' +
+        totalClass +
+        '"></span>'
+      );
+    },
   },
   // Default parameters
   slidesPerView: 1,

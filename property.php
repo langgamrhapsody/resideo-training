@@ -31,7 +31,6 @@
         <?php include_once 'navbar.php'; ?>
     </header>
     <main>
-        <!-- Featured Agents  -->
         <div class="listing-page">
             <div class="listing-page__row row">
                 <div class="listing-page__col col-12 col-md-6">

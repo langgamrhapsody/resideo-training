@@ -21,8 +21,8 @@
         <div class="contact-us">
             <div class="contact-us__top container">
                 <div class="contact-us__content">
-                    <h3 class="contact-us__content-title">Contact Us</h3>
-                    <p class="contact-us__content-desc">Say hello. Tell us how we can guide you</p>
+                    <h3 class="section-title">Contact Us</h3>
+                    <p class="section-desc">Say hello. Tell us how we can guide you</p>
                 </div>
             </div>
             <div class="contact-us__mid">

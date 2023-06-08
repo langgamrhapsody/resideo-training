@@ -6,6 +6,7 @@
         ['name' => 'Prestige House in LI', 'price' => "$1,000,000", 'img' => 'prop-10-1-gallery', 'detail' => '3 BD | 3 BA | 1000SE'],
         ['name' => 'Lux Motel in San', 'price' => "$110,000", 'img' => 'prop-11-1-gallery', 'detail' => '1 BD | 1 BA | 11BE'],
         ['name' => 'Royal Room in Lux', 'price' => "$200,000", 'img' => 'prop-12-1-gallery', 'detail' => '3 BD | 3 BA | 01BE'],
+        
     ]
     ?>
 
@@ -37,8 +38,6 @@
                                 <a href="/detail.php" class="section-button--hero">View Details</a>
                             </div>
                             <?php endforeach ?>
-
-
                         </div>
                     </div>
                 </div>
@@ -46,6 +45,7 @@
             </div>
         </div>
     </div>
+    <div class="hero__swiper-pagination swiper-pagination"></div>
     <div class="hero__swiper-button">
         <div class="hero-swiper-button-prev swiper-button-prev">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="32" height="32">

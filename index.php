@@ -18,22 +18,22 @@
     </header>
     <main>
         <!-- hero -->
-        <?php include_once'first.php'; ?>
+        <?php include_once'home-banner.php'; ?>
 
 
         <!-- featured properties -->
-        <?php include_once'second.php'; ?>
+        <?php include_once'home-property.php'; ?>
 
 
         <!-- why choose us -->
-        <?php include_once'third.php'; ?>
+        <?php include_once'home-advantages.php'; ?>
 
         <!-- Featured Agents  -->
-        <?php include_once'fourth.php'; ?>
+        <?php include_once'home-agents.php'; ?>
 
 
         <!-- Search Smarter Section -->
-        <?php include_once'fifth.php'; ?>
+        <?php include_once'home-smarter.php'; ?>
 
         <!-- modal -->
         <?php include_once'modal.php'; ?>

@@ -13,8 +13,8 @@ $features = [
             <div class="choose-us__row row">
                 <div class="choose-us__content col-12 col-lg-4">
                     <div class="choose-us__content-container">
-                        <h3 class="choose-us__content-title">Why Choose Us</h3>
-                        <p class="choose-us__content-desc">We offer perfect real estate service</p>
+                        <h3 class="section-title--advantage">Why Choose Us</h3>
+                        <p class="section-desc--advantage">We offer perfect real estate service</p>
                         <a href="#" class="btn section-button--choose">learn more</a>
                     </div>
                 </div>
