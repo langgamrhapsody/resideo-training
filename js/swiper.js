@@ -1,6 +1,6 @@
 //swiper third section
 
-const chooseSwiper = new Swiper(".choose-swiper", {
+const chooseSwiper = new Swiper(".choose-us__swiper-container", {
   // Navigation arrows
   navigation: {
     nextEl: ".choose-swiper-button-next",
@@ -10,6 +10,7 @@ const chooseSwiper = new Swiper(".choose-swiper", {
   // Default parameters
   slidesPerView: 1,
   loop: false,
+
   spaceBetween: 50,
   // Responsive breakpoints
   breakpoints: {
@@ -73,13 +74,13 @@ const heroTextSwiper = new Swiper(".hero-text-swiper", {
   },
 
   //responsives
-  breakpoints: {
-    768: {
-      autoplay: false,
-      loop: false,
-      allowTouchMove: true,
-    },
-  },
+  // breakpoints: {
+  //   768: {
+  //     autoplay: false,
+  //     loop: false,
+  //     allowTouchMove: true,
+  //   },
+  // },
 });
 
 const heroImgSwiper = new Swiper(".hero-img-swiper", {
@@ -113,7 +114,7 @@ const heroImgSwiper = new Swiper(".hero-img-swiper", {
   // Default parameters
   slidesPerView: 1,
   loop: true,
-  allowTouchMove: false,
+  allowTouchMove: true,
   pauseOnMouseEnter: false,
 
   autoplay: {
@@ -122,11 +123,11 @@ const heroImgSwiper = new Swiper(".hero-img-swiper", {
   },
 
   //responsives
-  breakpoints: {
-    768: {
-      autoplay: false,
-      loop: false,
-      allowTouchMove: true,
-    },
-  },
+  // breakpoints: {
+  //   768: {
+  //     autoplay: false,
+  //     loop: false,
+  //     allowTouchMove: true,
+  //   },
+  // },
 });

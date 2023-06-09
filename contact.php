@@ -21,18 +21,18 @@
         <div class="contact-us">
             <div class="contact-us__top container">
                 <div class="contact-us__content">
-                    <h3 class="section-title">Contact Us</h3>
+                    <h1 class="section-title">Contact Us</h1>
                     <p class="section-desc">Say hello. Tell us how we can guide you</p>
                 </div>
             </div>
             <div class="contact-us__mid">
                 <div class="container">
                     <div class="contact-us__mid-card">
-                        <h3 class="contact-us__mid-card-title">Our Offices</h3>
+                        <h2 class="contact-us__mid-card-title">Our Offices</h2>
                         <div class="contact-us__mid-card-row row">
                             <div class="contact-us__mid-card-col col-6 col-md-3">
                                 <div class="contact-us__mid-card-content">
-                                    <h5 class="contact-us__mid-card-content-title">Los Angeles</h5>
+                                    <h3 class="contact-us__mid-card-content-title">Los Angeles</h3>
                                     <p class="contact-us__mid-card-content-address">90 Fifth Avenuee, 3rd Floor Los
                                         Angeles,
                                         CA 1980</p>
@@ -44,7 +44,7 @@
                             </div>
                             <div class="contact-us__mid-card-col col-6 col-md-3">
                                 <div class="contact-us__mid-card-content">
-                                    <h5 class="contact-us__mid-card-content-title">Los Angeles</h5>
+                                    <h3 class="contact-us__mid-card-content-title">Los Angeles</h3>
                                     <p class="contact-us__mid-card-content-address">90 Fifth Avenuee, 3rd Floor Los
                                         Angeles,
                                         CA 1980</p>
@@ -56,7 +56,7 @@
                             </div>
                             <div class="contact-us__mid-card-col col-6 col-md-3">
                                 <div class="contact-us__mid-card-content">
-                                    <h5 class="contact-us__mid-card-content-title">Los Angeles</h5>
+                                    <h3 class="contact-us__mid-card-content-title">Los Angeles</h3>
                                     <p class="contact-us__mid-card-content-address">90 Fifth Avenuee, 3rd Floor Los
                                         Angeles,
                                         CA 1980</p>
@@ -68,7 +68,7 @@
                             </div>
                             <div class="contact-us__mid-card-col col-6 col-md-3">
                                 <div class="contact-us__mid-card-content">
-                                    <h5 class="contact-us__mid-card-content-title">Los Angeles</h5>
+                                    <h3 class="contact-us__mid-card-content-title">Los Angeles</h3>
                                     <p class="contact-us__mid-card-content-address">90 Fifth Avenuee, 3rd Floor Los
                                         Angeles,
                                         CA 1980</p>
@@ -89,7 +89,7 @@
                     <div class="contact-us__right col-12 col-md-6">
                         <div class="contact-us__right-content">
                             <div class="contact-us__right-content-header">
-                                <h3 class="contact-us__right-content-title">Our Locations</h3>
+                                <h2 class="contact-us__right-content-title">Our Locations</h2>
                                 <select class="contact-us__right-content-select">
                                     <option selected disabled value="">Los Angeles</option>
                                 </select>
@@ -104,7 +104,7 @@
                     </div>
                     <div class="contact-us__left col-12 col-md-6">
                         <div class="contact-us__left-content">
-                            <h3 class="contact-us__left-content-title">Send Us A Message</h3>
+                            <h2 class="contact-us__left-content-title">Send Us A Message</h2>
                             <div class="contact-us__left-content-container">
                                 <form class="contact-us__left-content-form">
                                     <input class="contact-us__left-content-input" type="text" name="name" id="name"

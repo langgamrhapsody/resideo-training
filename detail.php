@@ -14,16 +14,28 @@
 
 <body>
     <?php
-$keyDetails = [
+
+    $detailPict = [
+        ['name' => 'gallery image 1', 'img' => './assets/img/prop-11-1-gallery.jpg'],
+        ['name' => 'gallery image 2', 'img' => './assets/img/prop-10-2-big.jpg'],
+        ['name' => 'gallery image 3', 'img' => './assets/img/prop-10-3-big.jpg'],
+        ['name' => 'gallery image 4', 'img' => './assets/img/prop-6-3-big.jpg'],
+        ['name' => 'gallery image 5', 'img' => './assets/img/prop-11-3-big.jpg'],
+        ['name' => 'gallery image 6', 'img' => './assets/img/prop-4-1-gallery.jpg'],
+        ['name' => 'gallery image 7', 'img' => './assets/img/prop-5-1-gallery.jpg'],
+        ['name' => 'gallery image 8', 'img' => './assets/img/prop-6-1-gallery.jpg'],
+    ];
+
+    $keyDetails = [
         ['name' => 'status', 'value' => "Comming Soon"],
         ['name' => 'Property Type', 'value' => "Apartment"],
         ['name' => 'Year Built', 'value' => "1980"],
         ['name' => 'Stories', 'value' => "23"],
         ['name' => 'Room Count', 'value' => "6"],
         ['name' => 'Parking Spaces', 'value' => "2"]
-];
+    ];
 
-$amenities = [
+    $amenities = [
         ['name' => 'Internet', 'img' => "wifi"],
         ['name' => 'Garage', 'img' => "garage"],
         ['name' => 'Air Conditioning', 'img' => "ac"],
@@ -33,12 +45,12 @@ $amenities = [
         ['name' => 'Gym', 'img' => "gym"],
         ['name' => 'Playground', 'img' => "playground"],
         ['name' => 'Bar', 'img' => "bar"]
-];
-?>
+    ];
+    ?>
 
     <header>
         <!-- Navbar -->
-        <?php include_once'navbar.php'; ?>
+        <?php include_once 'navbar.php'; ?>
     </header>
     <main>
         <!-- Featured Agents  -->
@@ -47,7 +59,7 @@ $amenities = [
                 <div class="detail__header">
                     <div class="detail__row row">
                         <div class="detail__col col-12  col-lg-6">
-                            <h3 class="section-title">Beauttiful House in Marina</h3>
+                            <h1 class="section-title">Beauttiful House in Marina</h1>
                             <p class="section-desc">542 29th Avenue, Marina District, San Fransisco, CA
                                 94121</p>
                         </div>
@@ -83,27 +95,12 @@ $amenities = [
             </div>
             <div class="detail__mid">
                 <div class="gallery">
-                    <div class="gallery__item gallery__item--first" data-fancybox="gallery"
-                        data-src="./assets/img/prop-11-1-gallery.jpg">
-                        <img src="./assets/img/prop-11-1-gallery.jpg" alt="Gallery image 1" class="gallery__img">
+                    <?php foreach($detailPict as $index=>$pict) : ?>
+                    <div class="<?php echo "gallery__item--" . $index . " " . "gallery__item" ;?>"
+                        data-fancybox="gallery" data-src="<?php echo $pict['img'];?>">
+                        <img src="<?php echo $pict['img'];?>" alt="<?php echo $pict['name'];?>" class="gallery__img">
                     </div>
-                    <div class="gallery__item gallery__item--second" data-fancybox="gallery"
-                        data-src="./assets/img/prop-10-2-big.jpg">
-                        <img src="/assets/img/prop-10-2-big.jpg" alt="Gallery image 2" class="gallery__img">
-                    </div>
-                    <div class="gallery__item gallery__item--third" data-fancybox="gallery"
-                        data-src="./assets/img/prop-10-3-big.jpg">
-                        <img src="./assets/img/prop-10-3-big.jpg" alt="Gallery image 3" class="gallery__img">
-                    </div>
-                    <div class="gallery__item gallery__item--fourth" data-fancybox="gallery"
-                        data-src="./assets/img/prop-6-3-big.jpg">
-                        <img src="./assets/img/prop-6-3-big.jpg" alt="Gallery image 4" class="gallery__img">
-                    </div>
-                    <div class="gallery__item gallery__item--fifth" data-fancybox="gallery"
-                        data-src="./assets/img/prop-11-3-big.jpg">
-                        <img src="./assets/img/prop-11-3-big.jpg" alt="Gallery image 5" class="gallery__img">
-                    </div>
-
+                    <?php endforeach ?>
                 </div>
                 <div class="gallery__button">
                     <button data-fancybox-trigger="gallery" data-fancybox-index="0" id="view-gallery"
@@ -114,7 +111,7 @@ $amenities = [
                 <div class="detail__row-bottom row">
                     <div class="detail__right col-12 col-md-3 col-lg-4">
                         <div class="detail__right-content">
-                            <h5 class="detail__right-content-title">Listed By</h5>
+                            <h2 class="detail__right-content-title">Listed By</h2>
                             <div class="detail__right-row row">
                                 <div class="detail__right-col col-12 col-sm-8 col-lg-4">
                                     <div class="detail__right-content-agent">
@@ -153,9 +150,9 @@ $amenities = [
                     <div class="detail__left col-12 col-md-9 col-lg-8">
                         <div class="detail__left-content">
                             <div class="detail__left-key">
-                                <h5 class="detail__left-content-title">Key Details</h5>
+                                <h2 class="detail__left-content-title">Key Details</h2>
                                 <div class="detail__left-row row row-cols-2">
-                                    <?php foreach($keyDetails as $key) : ?>
+                                    <?php foreach ($keyDetails as $key) : ?>
                                     <div class="detail__left-col col-6">
                                         <div class="detail__left-section">
                                             <p class="detail__left-section-title"><?php echo $key['name']; ?></p>
@@ -169,7 +166,7 @@ $amenities = [
                                 </div>
                             </div>
                             <div class="detail__left-overview">
-                                <h5 class="detail__left-content-title">Overview</h5>
+                                <h2 class="detail__left-content-title">Overview</h2>
                                 <p id="overview" class="detail__left-content-desc">Lorem, ipsum dolor sit amet
                                     consectetur adipisicing
                                     elit. Officia tenetur quam vel
@@ -185,9 +182,9 @@ $amenities = [
                                 <button id="readmore" class="btn detail__left-content-button">More
                             </div>
                             <div class="detail__left-amenities">
-                                <h5 class="detail__left-content-title">Amenities</h5>
+                                <h2 class="detail__left-content-title">Amenities</h2>
                                 <div class="detail__left-row row row-cols-2">
-                                    <?php foreach($amenities as $amenity) : ?>
+                                    <?php foreach ($amenities as $amenity) : ?>
                                     <div class="detail__left-col col-4">
                                         <div class="detail__left-section">
                                             <img class="detail__left-section-svg"
@@ -202,7 +199,7 @@ $amenities = [
                                 </div>
                             </div>
                             <div class="detail__left-area">
-                                <h5 class="detail__left-content-title">Explore the Area</h5>
+                                <h2 class="detail__left-content-title">Explore the Area</h2>
                                 <div class="detail__left-area-button">
                                     <button class="btn area">Transportaion</button>
                                     <button class="btn area">Restaurant</button>
@@ -218,7 +215,7 @@ $amenities = [
 
                             </div>
                             <div class="detail__left-payment">
-                                <h5 class="detail__left-content-title">Payment Calculator</h5>
+                                <h2 class="detail__left-content-title">Payment Calculator</h2>
                                 <div class="detail__left-payment-row row">
                                     <div class="detail__left-payment-col col-12 col-sm-4">
                                         <div class="chart">
@@ -288,7 +285,7 @@ $amenities = [
                                 </div>
                             </div>
                             <div class="detail__left-school">
-                                <h5 class="detail__left-content-title">Schools in Marina District</h5>
+                                <h2 class="detail__left-content-title">Schools in Marina District</h2>
                                 <div class="detail__left-school">
                                     <div class="school-button-container">
                                         <button
@@ -313,8 +310,8 @@ $amenities = [
                                                 <td>9-11</td>
                                                 <td>5/5 <div class="ratings">
                                                         <?php for ($stars = 1; $stars <= 5; $stars++) {
-                                                        echo '<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 576 512"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>';
-                                                    } ?>
+                                                            echo '<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 576 512"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>';
+                                                        } ?>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -325,8 +322,8 @@ $amenities = [
                                                 <td>5/5
                                                     <div class="ratings">
                                                         <?php for ($stars = 1; $stars <= 5; $stars++) {
-                                                        echo '<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 576 512"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>';
-                                                    } ?>
+                                                            echo '<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 576 512"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>';
+                                                        } ?>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -343,7 +340,7 @@ $amenities = [
         </div>
     </main>
     <footer>
-        <?php include_once'mainFooter.php'; ?>
+        <?php include_once 'mainFooter.php'; ?>
     </footer>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>

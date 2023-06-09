@@ -5,7 +5,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-content__body">
-                <h5 class="modal-content__body-title">Welcome Back!</h5>
+                <h2 class="modal-content__body-title">Welcome Back!</h2>
                 <form>
                     <label class="modal-content__body-label" for="email">Email</label>
                     <input class="modal-content__body-input" type="email" id="email" name="email"
