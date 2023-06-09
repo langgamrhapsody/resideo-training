@@ -151,7 +151,7 @@
                         <div class="detail__left-content">
                             <div class="detail__left-key">
                                 <h2 class="detail__left-content-title">Key Details</h2>
-                                <div class="detail__left-row row row-cols-2">
+                                <div class="detail__left-row row">
                                     <?php foreach ($keyDetails as $key) : ?>
                                     <div class="detail__left-col col-6">
                                         <div class="detail__left-section">
@@ -183,9 +183,9 @@
                             </div>
                             <div class="detail__left-amenities">
                                 <h2 class="detail__left-content-title">Amenities</h2>
-                                <div class="detail__left-row row row-cols-2">
+                                <div class="detail__left-row row ">
                                     <?php foreach ($amenities as $amenity) : ?>
-                                    <div class="detail__left-col col-4">
+                                    <div class="detail__left-col col-6 col-sm-4">
                                         <div class="detail__left-section">
                                             <img class="detail__left-section-svg"
                                                 src="<?php echo "./assets/svg/" . $amenity['img'] . ".svg"; ?>"
@@ -253,7 +253,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="detail__left-payment-row--input row row-cols-2">
+                                <div class="detail__left-payment-row--input row ">
                                     <div class="detail__left-payment-col col-6">
                                         <div class="payment">
                                             <label class="payment__label">Term</label>
@@ -293,7 +293,7 @@
                                         <button class="btn detail__left-school-button ">Middle</button>
                                         <button class="btn detail__left-school-button ">High</button>
                                     </div>
-                                    <table class="table">
+                                    <table class="table school-table">
                                         <thead>
                                             <tr>
                                                 <th scope="col-6">School</th>

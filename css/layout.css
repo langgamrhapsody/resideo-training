@@ -11330,15 +11330,10 @@ body {
 
 .hero {
   position: relative;
-}
-.hero__container {
   padding: 200px 0;
   background: #181d21;
-  background-size: 50% 100%;
-  background-position: left;
-  background-repeat: no-repeat;
 }
-.hero__container:hover .section-button--hero:after {
+.hero:hover .section-button--hero:after {
   opacity: 1;
   padding-right: 50px;
 }
@@ -12867,7 +12862,17 @@ body {
   transition: all ease-in-out 0.3s;
   background-color: black;
 }
-.detail__left-school .table .ratings {
+@media screen and (max-width: 575.98px) {
+  .detail__left-school .school-table {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .detail__left-school .school-table {
+    font-size: 12px;
+  }
+}
+.detail__left-school .school-table .ratings {
   display: inline-flex;
   margin-left: 4px;
 }

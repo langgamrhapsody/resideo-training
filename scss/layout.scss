@@ -331,19 +331,12 @@ body {
 
 .hero {
   position: relative;
-  &__container {
-    padding: 200px 0;
-
-    background: color(bg, secondary);
-    background-size: 50% 100%;
-    background-position: left;
-    background-repeat: no-repeat;
-
-    &:hover .section-button--hero {
-      &:after {
-        opacity: 1;
-        padding-right: 50px;
-      }
+  padding: 200px 0;
+  background: color(bg, secondary);
+  &:hover .section-button--hero {
+    &:after {
+      opacity: 1;
+      padding-right: 50px;
     }
   }
 
@@ -2130,7 +2123,13 @@ body {
         }
       }
 
-      .table {
+      .school-table {
+        @media screen and (max-width: 575.98px) {
+          font-size: 14px;
+        }
+        @media screen and (max-width: 480px) {
+          font-size: 12px;
+        }
         & .ratings {
           display: inline-flex;
           margin-left: 4px;

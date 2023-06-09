@@ -11,37 +11,35 @@
     ?>
 
 <div class="hero">
-    <div class="hero__container">
-        <div class="container">
-            <div class="hero__row row">
-                <div class="hero__swiper--right col-12 col-md-7 col-lg-6 ">
-                    <div class="swiper hero-img-swiper">
-                        <div class="swiper-wrapper">
-                            <?php foreach($properties as $property) : ?>
-                            <div class="swiper-slide">
-                                <img class="hero-img-swiper__img" src="<?php echo $property['img']; ?>"
-                                    alt="<?php echo $property['name']; ?>">
-                            </div>
-                            <?php endforeach ?>
+    <div class="container">
+        <div class="hero__row row">
+            <div class="hero__swiper--right col-12 col-md-7 col-lg-6 ">
+                <div class="swiper hero-img-swiper">
+                    <div class="swiper-wrapper">
+                        <?php foreach($properties as $property) : ?>
+                        <div class="swiper-slide">
+                            <img class="hero-img-swiper__img" src="<?php echo $property['img']; ?>"
+                                alt="<?php echo $property['name']; ?>">
                         </div>
+                        <?php endforeach ?>
                     </div>
                 </div>
-                <div class="hero__swiper--left col-12 col-md-5 col-lg-6">
-                    <div class="swiper hero-text-swiper">
-                        <div class="swiper-wrapper">
-                            <?php foreach($properties as $property) : ?>
-                            <div class="swiper-slide">
-                                <h2 class="hero-text-swiper__title"><?php echo $property['name']; ?></h2>
-                                <p class="hero-text-swiper__desc"><?php echo $property['detail']; ?></p>
-                                <p class="hero-text-swiper__price"><?php echo $property['price']; ?></p>
-                                <a href="/detail.php" class="section-button--hero">View Details</a>
-                            </div>
-                            <?php endforeach ?>
-                        </div>
-                    </div>
-                </div>
-
             </div>
+            <div class="hero__swiper--left col-12 col-md-5 col-lg-6">
+                <div class="swiper hero-text-swiper">
+                    <div class="swiper-wrapper">
+                        <?php foreach($properties as $property) : ?>
+                        <div class="swiper-slide">
+                            <h2 class="hero-text-swiper__title"><?php echo $property['name']; ?></h2>
+                            <p class="hero-text-swiper__desc"><?php echo $property['detail']; ?></p>
+                            <p class="hero-text-swiper__price"><?php echo $property['price']; ?></p>
+                            <a href="/detail.php" class="section-button--hero">View Details</a>
+                        </div>
+                        <?php endforeach ?>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
     <div class="hero__swiper-pagination swiper-pagination"></div>

@@ -77,7 +77,7 @@
 
                             </div>
                             <div class="property__body">
-                                <div class="property__body-content-row row row-cols-1 row-cols-lg-2 ">
+                                <div class="property__body-content-row row ">
                                     <?php foreach($properties as $property) : ?>
                                     <div class="property__body-content-item col-12 col-lg-6 ">
                                         <div class="property__body-content-item-card">

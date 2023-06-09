@@ -15,7 +15,7 @@
         <div class="featured-properties__content">
             <h1 class="section-title">Featured Properties</h1>
             <p class="section-desc">Browse our latest hot offers</p>
-            <div class="featured-properties__content-row row row-cols-1 row-cols-sm-2 row-cols-lg-3">
+            <div class="featured-properties__content-row row ">
                 <?php foreach($properties as $property) : ?>
                 <div class="featured-properties__content-item col-10 col-sm-6 col-lg-4">
                     <div class="featured-properties__content-item-card">
