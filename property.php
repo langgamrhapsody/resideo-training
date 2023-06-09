@@ -131,7 +131,6 @@
     </script>
 
     <script src="./js/layout.js"></script>
-    <script src="./js/swiper.js"></script>
 
 </body>
 

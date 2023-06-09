@@ -20,7 +20,7 @@ const chooseSwiper = new Swiper(".choose-us__swiper-container", {
       spaceBetween: 20,
     },
 
-    // when window width is >= 576px
+    // when window width is >= 575.98px
     576: {
       slidesPerView: 2,
       spaceBetween: 30,

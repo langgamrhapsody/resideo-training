@@ -352,11 +352,12 @@
     </script>
 
     <script src="./js/layout.js"></script>
-    <script src="./js/swiper.js"></script>
     <script src="./js/chart.js"></script>
-    <script>
-    Fancybox.bind('[data-fancybox="gallery"]', {});
-    </script>
+    <script src="./js/fancybox.js"></script>
+    <script src="./js/detail.js"></script>
+
+
+
 
 </body>
 
