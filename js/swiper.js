@@ -37,8 +37,8 @@ const chooseSwiper = new Swiper(".choose-us__swiper-container", {
 const heroTextSwiper = new Swiper(".hero-text-swiper", {
   // Navigation arrows
   navigation: {
-    nextEl: ".hero-swiper-button-next",
-    prevEl: ".hero-swiper-button-prev",
+    nextEl: ".hero__swiper-button-next",
+    prevEl: ".hero__swiper-button-prev",
   },
 
   pagination: {
@@ -86,8 +86,8 @@ const heroTextSwiper = new Swiper(".hero-text-swiper", {
 const heroImgSwiper = new Swiper(".hero-img-swiper", {
   // Navigation arrows
   navigation: {
-    nextEl: ".hero-swiper-button-next",
-    prevEl: ".hero-swiper-button-prev",
+    nextEl: ".hero__swiper-button-next",
+    prevEl: ".hero__swiper-button-prev",
   },
 
   pagination: {
@@ -114,7 +114,7 @@ const heroImgSwiper = new Swiper(".hero-img-swiper", {
   // Default parameters
   slidesPerView: 1,
   loop: true,
-  allowTouchMove: true,
+  allowTouchMove: false,
   pauseOnMouseEnter: false,
 
   autoplay: {

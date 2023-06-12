@@ -18,13 +18,13 @@
             <div class="featured-properties__content-row row ">
                 <?php foreach($properties as $property) : ?>
                 <div class="featured-properties__content-item col-10 col-sm-6 col-lg-4">
-                    <div class="featured-properties__content-item-card">
-                        <img class="featured-properties__content-item-card-img" src="<?php echo $property['img']; ?>"
+                    <div class="property-card">
+                        <img class="property-card__img" src="<?php echo $property['img']; ?>"
                             alt="<?php echo $property['name']; ?>">
-                        <div class="featured-properties__content-item-card-desc">
-                            <p class="properties__text--title"><?php echo $property['name']; ?></p>
-                            <p class="properties__text--price"><?php echo $property['price']; ?></p>
-                            <p class="properties__text--attrs"><?php echo $property['detail']; ?></p>
+                        <div class="property-card__desc">
+                            <p class="property-card__text--title"><?php echo $property['name']; ?></p>
+                            <p class="property-card__text--price"><?php echo $property['price']; ?></p>
+                            <p class="property-card__text--attrs"><?php echo $property['detail']; ?></p>
                         </div>
                     </div>
                 </div>

@@ -80,14 +80,15 @@
                                 <div class="property__body-content-row row ">
                                     <?php foreach($properties as $property) : ?>
                                     <div class="property__body-content-item col-12 col-lg-6 ">
-                                        <div class="property__body-content-item-card">
-                                            <img class="property__body-content-item-card-img"
-                                                src="<?php echo $property['img']; ?>"
+                                        <div class="property-card">
+                                            <img class="property-card__img" src="<?php echo $property['img']; ?>"
                                                 alt="<?php echo $property['name']; ?>">
-                                            <div class="property__body-content-item-card-desc">
-                                                <p class="properties__text--title"><?php echo $property['name']; ?></p>
-                                                <p class="properties__text--price"><?php echo $property['price']; ?></p>
-                                                <p class="properties__text--attrs"><?php echo $property['detail']; ?>
+                                            <div class="property-card__desc">
+                                                <p class="property-card__text--title"><?php echo $property['name']; ?>
+                                                </p>
+                                                <p class="property-card__text--price"><?php echo $property['price']; ?>
+                                                </p>
+                                                <p class="property-card__text--attrs"><?php echo $property['detail']; ?>
                                                 </p>
                                             </div>
                                         </div>
