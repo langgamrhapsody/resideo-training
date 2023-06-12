@@ -4,9 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link href="./css/layout.css" rel="stylesheet">
+    <?php include_once './stylesheets/stylesheets.php'; ?>
+    <link href="./css/pages/property.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <title>Resideo - Our Properties</title>
 </head>
@@ -28,7 +27,7 @@
 
     <header>
         <!-- Navbar -->
-        <?php include_once 'navbar.php'; ?>
+        <?php include_once 'components/navbar.php'; ?>
     </header>
     <main>
         <div class="listing-page">
@@ -79,10 +78,12 @@
                             <div class="property__body">
                                 <div class="property__body-content-row row ">
                                     <?php foreach($properties as $property) : ?>
-                                    <div class="property__body-content-item col-12 col-lg-6 ">
-                                        <div class="property-card">
-                                            <img class="property-card__img" src="<?php echo $property['img']; ?>"
-                                                alt="<?php echo $property['name']; ?>">
+                                    <div class="property__body-content-item col-12 col-sm-6 col-md-12 col-lg-6 ">
+                                        <a class="property-card">
+                                            <div class="property-card__second-image-container">
+                                                <img class="ratio-item" src="<?php echo $property['img']; ?>"
+                                                    alt="<?php echo $property['name']; ?>">
+                                            </div>
                                             <div class="property-card__desc">
                                                 <p class="property-card__text--title"><?php echo $property['name']; ?>
                                                 </p>
@@ -91,7 +92,7 @@
                                                 <p class="property-card__text--attrs"><?php echo $property['detail']; ?>
                                                 </p>
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
                                     <?php endforeach ?>
                                 </div>
@@ -103,7 +104,7 @@
                                 </div>
                             </div>
                         </div>
-                        <?php include_once 'secondaryFooter.php'; ?>
+                        <?php include_once 'components/secondaryFooter.php'; ?>
 
                     </div>
                 </div>

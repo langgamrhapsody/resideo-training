@@ -33,7 +33,7 @@
                             <h2 class="hero-text-swiper__title"><?php echo $property['name']; ?></h2>
                             <p class="hero-text-swiper__desc"><?php echo $property['detail']; ?></p>
                             <p class="hero-text-swiper__price"><?php echo $property['price']; ?></p>
-                            <a href="/detail.php" class="section-button--hero">View Details</a>
+                            <a href="/detail.php" class="section-button hero__button">View Details</a>
                         </div>
                         <?php endforeach ?>
                     </div>

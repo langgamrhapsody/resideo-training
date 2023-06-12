@@ -4,9 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link href="./css/layout.css" rel="stylesheet">
+    <?php include_once './stylesheets/stylesheets.php'; ?>
+    <link href="./css/pages/contact.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <title>Resideo - Contact Us</title>
 </head>
@@ -14,7 +13,7 @@
 <body>
     <header>
         <!-- Navbar -->
-        <?php include_once'navbar.php'; ?>
+        <?php include_once 'components/navbar.php'; ?>
     </header>
     <main>
         <!-- Featured Agents  -->
@@ -131,7 +130,7 @@
         </div>
     </main>
     <footer>
-        <?php include_once'mainFooter.php'; ?>
+        <?php include_once 'components/mainFooter.php'; ?>
     </footer>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>

@@ -15,7 +15,7 @@ $features = [
                     <div class="choose-us__content-container">
                         <h2 class="section-title--advantage">Why Choose Us</h2>
                         <p class="section-desc--advantage">We offer perfect real estate service</p>
-                        <a href="#" class="btn section-button--choose">learn more</a>
+                        <a href="#" class="btn section-button choose-us__button">learn more</a>
                     </div>
                 </div>
                 <div class="choose-us__swiper col-12 col-lg-8 ">

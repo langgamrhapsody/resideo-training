@@ -17,8 +17,11 @@ $agents = [
                 foreach($agents as $agent) : ?>
                 <div class="featured-agents__content-item col-10 col-sm-6 col-lg-3">
                     <a href="#" class="agent-card">
-                        <img class="agent-card__img" src="<?php echo $agent['img']; ?>"
-                            alt="<?php echo $agent['name']?>">
+                        <div class="agent-card__image-container">
+
+                            <img class="ratio-item agent-card__image" src="<?php echo $agent['img']; ?>"
+                                alt="<?php echo $agent['name']?>">
+                        </div>
                         <div class="btn agent-card__info">
                             <p class="agent-card__info-name"><?php echo $agent['name']; ?></p>
                             <div class="agent-card__info-contact">
@@ -34,7 +37,7 @@ $agents = [
                 </div>
                 <?php endforeach ?>
             </div>
-            <a href="#" class="btn section-button--agents">See all agents</a>
+            <a href="#" class="btn section-button featured-agents__button">See all agents</a>
             </a>
         </div>
     </div>
