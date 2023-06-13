@@ -1,14 +1,7 @@
 @use "sass:map";
 @use "sass:math";
 @use "_config.scss" as *;
-@use "plugin/bootstrap/bootstrap.scss" with (
-  $container-max-widths: (
-    sm: 540px,
-    md: 720px,
-    lg: 960px,
-    xl: 1140px,
-  )
-);
+@use "plugin/bootstrap/bootstrap.scss";
 @use "plugin/_tmdrPreset.scss" with (
   $spacingIncrement: 15
 );
@@ -323,12 +316,16 @@ body {
     &-container {
       display: flex;
       gap: 24px;
+
+      @media screen and (max-width: 480px) {
+        gap: 12px;
+      }
     }
   }
 
-  @media screen and (max-width: 480px) {
-    padding: 24px 0;
-  }
+  // @media screen and (max-width: 480px) {
+  //   padding: 24px 0;
+  // }
 }
 
 .modal {

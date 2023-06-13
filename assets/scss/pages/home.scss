@@ -14,7 +14,6 @@
 
 .hero {
   position: relative;
-  height: 100vh;
   padding: 200px 0;
   background: color(bg, secondary);
   &:hover &__button {
@@ -123,8 +122,6 @@
     &-button {
       z-index: 5;
       display: flex;
-      gap: 16px;
-      padding: 24px;
       background-color: black;
 
       @media screen and (max-width: 767.98px) {
@@ -143,6 +140,7 @@
         margin-top: unset;
         color: white;
         background-color: rgba(0, 0, 0, 0.7);
+        padding: 12px;
 
         @media screen and (max-width: 767.98px) {
           width: 40px;
@@ -163,6 +161,7 @@
         margin-top: unset;
         color: white;
         background-color: rgba(0, 0, 0, 0.7);
+        padding: 12px;
 
         @media screen and (max-width: 767.98px) {
           width: 40px;
@@ -203,6 +202,7 @@
 
   @media screen and (max-width: 767.98px) {
     padding: 0;
+    height: 100vh;
   }
 }
 
@@ -363,6 +363,7 @@
       position: relative;
       transform: translateY(0);
       width: 100%;
+      margin-top: 24px;
     }
 
     .swiper {

@@ -11,7 +11,6 @@
 
 .hero {
   position: relative;
-  height: 100vh;
   padding: 200px 0;
   background: #181d21;
 }
@@ -105,8 +104,6 @@
 .hero__swiper-button {
   z-index: 5;
   display: flex;
-  gap: 16px;
-  padding: 24px;
   background-color: black;
 }
 @media screen and (max-width: 767.98px) {
@@ -125,6 +122,7 @@
   margin-top: unset;
   color: white;
   background-color: rgba(0, 0, 0, 0.7);
+  padding: 12px;
 }
 @media screen and (max-width: 767.98px) {
   .hero__swiper-button .hero__swiper-button-next {
@@ -144,6 +142,7 @@
   margin-top: unset;
   color: white;
   background-color: rgba(0, 0, 0, 0.7);
+  padding: 12px;
 }
 @media screen and (max-width: 767.98px) {
   .hero__swiper-button .hero__swiper-button-prev {
@@ -175,6 +174,7 @@
 @media screen and (max-width: 767.98px) {
   .hero {
     padding: 0;
+    height: 100vh;
   }
 }
 
@@ -308,6 +308,7 @@
     position: relative;
     transform: translateY(0);
     width: 100%;
+    margin-top: 24px;
   }
 }
 .choose-us__swiper .swiper .swiper-wrapper .swiper-slide {

@@ -1,6 +1,6 @@
 //swiper third section
 
-const chooseSwiper = new Swiper(".choose-us__swiper-container", {
+var chooseSwiper = new Swiper(".choose-us__swiper-container", {
   // Navigation arrows
   navigation: {
     nextEl: ".choose-swiper-button-next",
@@ -8,8 +8,20 @@ const chooseSwiper = new Swiper(".choose-us__swiper-container", {
   },
 
   // Default parameters
-  slidesPerView: 1,
   loop: false,
+  allowTouchMove: true,
+  pauseOnMouseEnter: false,
+
+  autoplay: false,
+
+  longSwipesRatio: 0.01,
+  followFinger: false,
+  grabCursor: true,
+  watchSlidesProgress: true,
+  parallax: true,
+  lazy: {
+    loadPrevNext: true,
+  },
 
   spaceBetween: 50,
   // Responsive breakpoints
@@ -34,7 +46,29 @@ const chooseSwiper = new Swiper(".choose-us__swiper-container", {
   },
 });
 
-const heroTextSwiper = new Swiper(".hero-text-swiper", {
+var heroTextSwiper = new Swiper(".hero-text-swiper", {
+  // Default parameters
+  direction: "horizontal",
+  effect: "slides",
+  loop: true,
+  allowTouchMove: false,
+
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
+
+  //responsives
+  // breakpoints: {
+  //   768: {
+  //     autoplay: false,
+  //     loop: false,
+  //     allowTouchMove: true,
+  //   },
+  // },
+});
+
+var heroImgSwiper = new Swiper(".hero-img-swiper", {
   // Navigation arrows
   navigation: {
     nextEl: ".hero__swiper-button-next",
@@ -63,15 +97,25 @@ const heroTextSwiper = new Swiper(".hero-text-swiper", {
     },
   },
   // Default parameters
-  slidesPerView: 1,
   loop: true,
-  allowTouchMove: false,
+  allowTouchMove: true,
   pauseOnMouseEnter: false,
 
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
+  autoplay: true,
+
+  longSwipesRatio: 0.01,
+  followFinger: false,
+  grabCursor: true,
+  watchSlidesProgress: true,
+  parallax: true,
+  lazy: {
+    loadPrevNext: true,
   },
+
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
 
   //responsives
   // breakpoints: {
@@ -83,51 +127,4 @@ const heroTextSwiper = new Swiper(".hero-text-swiper", {
   // },
 });
 
-const heroImgSwiper = new Swiper(".hero-img-swiper", {
-  // Navigation arrows
-  navigation: {
-    nextEl: ".hero__swiper-button-next",
-    prevEl: ".hero__swiper-button-prev",
-  },
-
-  pagination: {
-    el: ".hero__swiper-pagination",
-    type: "fraction",
-    formatFractionCurrent: function (number) {
-      return ("0" + number).slice(-2);
-    },
-    formatFractionTotal: function (number) {
-      return ("0" + number).slice(-2);
-    },
-    renderFraction: function (currentClass, totalClass) {
-      return (
-        '<span class="' +
-        currentClass +
-        '"></span>' +
-        " / " +
-        '<span class="' +
-        totalClass +
-        '"></span>'
-      );
-    },
-  },
-  // Default parameters
-  slidesPerView: 1,
-  loop: true,
-  allowTouchMove: false,
-  pauseOnMouseEnter: false,
-
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-
-  //responsives
-  // breakpoints: {
-  //   768: {
-  //     autoplay: false,
-  //     loop: false,
-  //     allowTouchMove: true,
-  //   },
-  // },
-});
+heroImgSwiper.controller.control = this.heroTextSwiper;
