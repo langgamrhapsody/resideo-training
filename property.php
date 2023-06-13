@@ -4,30 +4,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <?php include_once './stylesheets/stylesheets.php'; ?>
-    <link href="./css/pages/property.css" rel="stylesheet">
+    <?php include_once './stylesheets/globalStylesheet.php'; ?>
+    <link href="./assets/css/pages/property.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <title>Resideo - Our Properties</title>
 </head>
 
 <body>
 
-    <?php
-    $properties = [
-        ['name' => 'Chic Apartment in Downtown', 'price' => "$890,000", 'img' => './assets/img/prop-4-1-gallery.jpg', 'detail' => '2 BD | 2 BA | 920SE'],
-        ['name' => 'Villa Luna in Bali', 'price' => "$560,000", 'img' => './assets/img/prop-5-1-gallery.jpg', 'detail' => '1 BD | 1 PP | 312VR'],
-        ['name' => 'Hotel Margo in Dubai', 'price' => "$320,000", 'img' => './assets/img/prop-6-1-gallery.jpg', 'detail' => '1 BD | 1 JJ | 111RR'],
-        ['name' => 'Prestige House in LI', 'price' => "$1,000,000", 'img' => './assets/img/prop-10-1-gallery.jpg', 'detail' => '3 BD | 3 BA | 1000SE'],
-        ['name' => 'Lux Motel in San', 'price' => "$110,000", 'img' => './assets/img/prop-11-1-gallery.jpg', 'detail' => '1 BD | 1 BA | 11BE'],
-        ['name' => 'Royal Room in Lux', 'price' => "$200,000", 'img' => './assets/img/prop-12-1-gallery.jpg', 'detail' => '3 BD | 3 BA | 01BE'],
-        
-    ]
+    <?php include_once "./data/data.php"
     ?>
 
 
     <header>
         <!-- Navbar -->
-        <?php include_once 'components/navbar.php'; ?>
+        <?php include_once './components/navbar/navbar.php'; ?>
     </header>
     <main>
         <div class="listing-page">
@@ -77,9 +68,11 @@
                             </div>
                             <div class="property__body">
                                 <div class="property__body-content-row row ">
+                                    <!-- <?php include_once './components/card/property-card.php' ?> -->
+
                                     <?php foreach($properties as $property) : ?>
                                     <div class="property__body-content-item col-12 col-sm-6 col-md-12 col-lg-6 ">
-                                        <a class="property-card">
+                                        <a href="/detail.php" class="property-card">
                                             <div class="property-card__second-image-container">
                                                 <img class="ratio-item" src="<?php echo $property['img']; ?>"
                                                     alt="<?php echo $property['name']; ?>">
@@ -104,7 +97,7 @@
                                 </div>
                             </div>
                         </div>
-                        <?php include_once 'components/secondaryFooter.php'; ?>
+                        <?php include_once './components/footer/secondaryFooter.php'; ?>
 
                     </div>
                 </div>
@@ -132,7 +125,7 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
     </script>
 
-    <script src="./js/layout.js"></script>
+    <script src="./assets/js/layout.js"></script>
 
 </body>
 

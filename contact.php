@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <?php include_once './stylesheets/stylesheets.php'; ?>
-    <link href="./css/pages/contact.css" rel="stylesheet">
+    <?php include_once './stylesheets/globalStylesheet.php'; ?>
+    <link href="./assets/css/pages/contact.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <title>Resideo - Contact Us</title>
 </head>
@@ -13,7 +13,7 @@
 <body>
     <header>
         <!-- Navbar -->
-        <?php include_once 'components/navbar.php'; ?>
+        <?php include_once 'components/navbar/navbar.php'; ?>
     </header>
     <main>
         <!-- Featured Agents  -->
@@ -130,7 +130,7 @@
         </div>
     </main>
     <footer>
-        <?php include_once 'components/mainFooter.php'; ?>
+        <?php include_once 'components/footer/mainFooter.php'; ?>
     </footer>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
@@ -142,7 +142,7 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
     </script>
 
-    <script src="./js/layout.js"></script>
+    <script src="./assets/js/layout.js"></script>
 
 </body>
 

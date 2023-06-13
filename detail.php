@@ -4,51 +4,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <?php include_once './stylesheets/stylesheets.php'; ?>
-    <link href="./css/pages/detail.css" rel="stylesheet">
+    <?php include_once './stylesheets/globalStylesheet.php'; ?>
+    <link href="./assets/css/pages/detail.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     <title>Resideo - Beautiful House in Marina</title>
 </head>
 
 <body>
-    <?php
-
-    $detailPict = [
-        ['name' => 'gallery image 1', 'img' => './assets/img/prop-11-1-gallery.jpg'],
-        ['name' => 'gallery image 2', 'img' => './assets/img/prop-10-2-big.jpg'],
-        ['name' => 'gallery image 3', 'img' => './assets/img/prop-10-3-big.jpg'],
-        ['name' => 'gallery image 4', 'img' => './assets/img/prop-6-3-big.jpg'],
-        ['name' => 'gallery image 5', 'img' => './assets/img/prop-11-3-big.jpg'],
-        ['name' => 'gallery image 6', 'img' => './assets/img/prop-4-1-gallery.jpg'],
-        ['name' => 'gallery image 7', 'img' => './assets/img/prop-5-1-gallery.jpg'],
-        ['name' => 'gallery image 8', 'img' => './assets/img/prop-6-1-gallery.jpg'],
-    ];
-
-    $keyDetails = [
-        ['name' => 'status', 'value' => "Comming Soon"],
-        ['name' => 'Property Type', 'value' => "Apartment"],
-        ['name' => 'Year Built', 'value' => "1980"],
-        ['name' => 'Stories', 'value' => "23"],
-        ['name' => 'Room Count', 'value' => "6"],
-        ['name' => 'Parking Spaces', 'value' => "2"]
-    ];
-
-    $amenities = [
-        ['name' => 'Internet', 'img' => "wifi"],
-        ['name' => 'Garage', 'img' => "garage"],
-        ['name' => 'Air Conditioning', 'img' => "ac"],
-        ['name' => 'Dishwasher', 'img' => "dishwasher"],
-        ['name' => 'Disposal', 'img' => "disposal"],
-        ['name' => 'Balcony', 'img' => "balcony"],
-        ['name' => 'Gym', 'img' => "gym"],
-        ['name' => 'Playground', 'img' => "playground"],
-        ['name' => 'Bar', 'img' => "bar"]
-    ];
+    <?php include_once "./data/data.php"
     ?>
 
     <header>
         <!-- Navbar -->
-        <?php include_once 'components/navbar.php'; ?>
+        <?php include_once 'components/navbar/navbar.php'; ?>
     </header>
     <main>
         <!-- Detail Property  -->
@@ -338,7 +306,7 @@
         </div>
     </main>
     <footer>
-        <?php include_once 'components/mainFooter.php'; ?>
+        <?php include_once 'components/footer/mainFooter.php'; ?>
     </footer>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
@@ -349,8 +317,8 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
     </script>
 
-    <script src="./js/layout.js"></script>
-    <script src="./js/detail.js"></script>
+    <script src="./assets/js/layout.js"></script>
+    <script src="./assets/js/detail.js"></script>
 
 
 
