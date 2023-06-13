@@ -350,8 +350,6 @@
     </script>
 
     <script src="./js/layout.js"></script>
-    <script src="./js/chart.js"></script>
-    <script src="./js/fancybox.js"></script>
     <script src="./js/detail.js"></script>
 
 

@@ -11608,22 +11608,22 @@ body {
   color: #cccccc;
 }
 
-.property-card-ratio__image-container {
+.property-card__image-container {
   position: relative;
   width: 100%;
   display: block;
 }
-.property-card-ratio__image-container:before {
+.property-card__image-container:before {
   content: "";
   display: block;
   padding-top: 112.3595505618%;
 }
-.property-card-ratio__second-image-container {
+.property-card__second-image-container {
   position: relative;
   width: 100%;
   display: block;
 }
-.property-card-ratio__second-image-container:before {
+.property-card__second-image-container:before {
   content: "";
   display: block;
   padding-top: 75%;
