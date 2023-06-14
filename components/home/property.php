@@ -4,14 +4,11 @@
             <h1 class="section-title">Featured Properties</h1>
             <p class="section-desc">Browse our latest hot offers</p>
             <div class="featured-properties__content-row row ">
-
-                <!-- <?php include_once './components/card/property-card.php' ?> -->
-
                 <?php foreach($properties as $property) : ?>
                 <div class="featured-properties__content-item col-10 col-sm-6 col-lg-4">
                     <a href="/detail.php" class="property-card">
                         <div class="property-card__image-container">
-                            <img class="ratio-item" src="<?php echo $property['img']; ?>"
+                            <img class="ratio-item property-card__img" src="<?php echo $property['img']; ?>"
                                 alt="<?php echo $property['name']; ?>">
                         </div>
                         <div class="property-card__desc">
@@ -22,8 +19,6 @@
                     </a>
                 </div>
                 <?php endforeach ?>
-
-
             </div>
             <a href="" class="btn section-button featured-properties__button">browse all</a>
             </a>

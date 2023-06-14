@@ -68,13 +68,12 @@
                             </div>
                             <div class="property__body">
                                 <div class="property__body-content-row row ">
-                                    <!-- <?php include_once './components/card/property-card.php' ?> -->
-
                                     <?php foreach($properties as $property) : ?>
                                     <div class="property__body-content-item col-12 col-sm-6 col-md-12 col-lg-6 ">
                                         <a href="/detail.php" class="property-card">
                                             <div class="property-card__second-image-container">
-                                                <img class="ratio-item" src="<?php echo $property['img']; ?>"
+                                                <img class="ratio-item property-card__img"
+                                                    src="<?php echo $property['img']; ?>"
                                                     alt="<?php echo $property['name']; ?>">
                                             </div>
                                             <div class="property-card__desc">

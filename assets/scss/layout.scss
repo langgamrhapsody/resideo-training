@@ -611,13 +611,12 @@ body {
   }
 
   &__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 10px;
     transition: all ease-in-out 0.3s;
     filter: brightness(0.9);
+
+    &:hover {
+      filter: brightness(0.5);
+    }
   }
 
   &__desc {
@@ -645,6 +644,10 @@ body {
       @extend .property-card__text;
       color: colorMod(white, -20%);
     }
+  }
+
+  &-container {
+    margin-bottom: 24px;
   }
 
   // @media screen and (max-width: 991.98px) {

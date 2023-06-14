@@ -9,10 +9,10 @@
                 <form>
                     <label class="modal-content__body-label" for="email">Email</label>
                     <input class="modal-content__body-input" type="email" id="email" name="email"
-                        placeholder="Enter your email...">
+                        placeholder="Enter your email..." required>
                     <label class="modal-content__body-label" for="password">Password</label>
                     <input class="modal-content__body-input" type="password" id="password" name="password"
-                        placeholder="Enter your password...">
+                        placeholder="Enter your password..." required>
                     <button type="submit" class="btn modal-content__body-button">Sign In</button>
                 </form>
             </div>

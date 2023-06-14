@@ -101,7 +101,10 @@ var heroImgSwiper = new Swiper(".hero-img-swiper", {
   allowTouchMove: true,
   pauseOnMouseEnter: false,
 
-  autoplay: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
 
   longSwipesRatio: 0.01,
   followFinger: false,
