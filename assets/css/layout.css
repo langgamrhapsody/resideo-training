@@ -11221,20 +11221,20 @@ body {
 }
 .navbar__toggler {
   display: none;
+  justify-content: center;
+  align-items: center;
   padding: 8px;
-  border: 1px solid white;
+  border: none;
   border-radius: 10px;
   width: 40px;
   height: 40px;
 }
-.navbar__toggler:hover {
-  background-color: white;
-}
 .navbar__toggler:hover .navbar__toggler-icon {
-  color: #363333;
+  color: #edc170;
 }
 .navbar__toggler-icon {
   color: white;
+  border: none;
 }
 @media screen and (width: 991.98px) {
   .navbar__toggler {
@@ -11307,11 +11307,8 @@ body {
   width: 40px;
   height: 40px;
   padding: 10px;
-  border: 1px solid white;
+  border: none;
   border-radius: 50%;
-}
-.navbar__login:hover {
-  border: 1px solid #edc170;
 }
 .navbar__login:hover .navbar__login-svg {
   color: #edc170;
@@ -11323,11 +11320,11 @@ body {
 }
 .navbar__button-container {
   display: flex;
-  gap: 24px;
+  gap: 12px;
 }
 @media screen and (max-width: 480px) {
   .navbar__button-container {
-    gap: 12px;
+    gap: 4px;
   }
 }
 
@@ -11540,6 +11537,9 @@ body {
   color: black;
   background-color: white;
   transition: all ease-in-out 0.3s;
+}
+.footer__button:hover {
+  color: #edc170;
 }
 .footer__button-svg {
   width: 14px;

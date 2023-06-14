@@ -209,21 +209,23 @@ body {
 
   &__toggler {
     display: none;
+    justify-content: center;
+    align-items: center;
     padding: 8px;
-    border: 1px solid white;
+    border: none;
     border-radius: 10px;
     width: 40px;
     height: 40px;
 
     &:hover {
-      background-color: white;
     }
 
     &:hover &-icon {
-      color: color(text, secondary);
+      color: color(text, primary);
     }
     &-icon {
       color: white;
+      border: none;
     }
 
     @media screen and (width: 991.98px) {
@@ -294,12 +296,8 @@ body {
     height: 40px;
     padding: 10px;
 
-    border: 1px solid white;
+    border: none;
     border-radius: 50%;
-
-    &:hover {
-      border: 1px solid color(text, primary);
-    }
 
     &:hover &-svg {
       color: color(text, primary);
@@ -315,10 +313,10 @@ body {
   &__button {
     &-container {
       display: flex;
-      gap: 24px;
+      gap: 12px;
 
       @media screen and (max-width: 480px) {
-        gap: 12px;
+        gap: 4px;
       }
     }
   }
@@ -560,6 +558,10 @@ body {
     color: black;
     background-color: white;
     transition: all ease-in-out 0.3s;
+
+    &:hover {
+      color: color(text, primary);
+    }
 
     &-svg {
       width: 14px;

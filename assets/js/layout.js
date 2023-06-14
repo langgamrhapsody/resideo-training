@@ -24,22 +24,3 @@ const body = document.getElementsByTagName("body")[0];
 if (currentPage === "/property.php") {
   body.style.overflow = "hidden";
 }
-
-// property-card
-// const propertyCard = document.getElementById("property-card-container");
-// if (currentPage == "/property.php") {
-//   propertyCard.forEach(function (card) {
-//     card.classList.add("col-12");
-//     card.classList.add("col-sm-6");
-
-//     card.classList.add("col-md-12");
-
-//     card.classList.add("col-lg-6");
-//   });
-// } else if (currentPage == "/") {
-//   propertyCard.forEach(function (card) {
-//     card.classList.add("col-10");
-//     card.classList.add("col-sm-6");
-//     card.classList.add("col-lg-4");
-//   });
-// }
