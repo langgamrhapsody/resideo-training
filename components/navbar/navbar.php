@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark nav-custom">
+<nav class="navbar navbar-expand-lg navbar-dark nav-custom custom-nav">
     <div class="container navbar__custom">
         <a class="navbar__brand" href="/">
             resideo.

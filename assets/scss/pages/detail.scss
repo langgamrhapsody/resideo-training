@@ -505,6 +505,10 @@
         display: flex;
         gap: 12px;
         margin-bottom: 16px;
+
+        .btn {
+          border: none;
+        }
       }
 
       &-button {
@@ -533,9 +537,10 @@
         }
       }
 
-      .school-button-active {
+      .active {
         position: relative;
         color: black;
+        border: none;
 
         &:after {
           content: "";
@@ -547,6 +552,14 @@
           transform: scale(1);
           transition: all ease-in-out 0.3s;
           background-color: black;
+        }
+      }
+
+      .tab-content {
+        .active {
+          &:after {
+            content: unset;
+          }
         }
       }
 

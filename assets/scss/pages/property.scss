@@ -15,17 +15,25 @@
 
     &--item {
       @extend .listing-page__col;
-      max-width: 50%;
+      max-width: 100%;
       transition: max-width ease-in-out 0.3s;
 
       @media screen and (max-width: 991.98px) {
-        max-width: 100%;
+        max-width: 100% !important;
       }
     }
 
     &--map {
       @extend .listing-page__col;
+      margin-top: 64px;
+      position: relative;
+
+      position: absolute;
+      right: -10000px;
+      top: 0;
+      width: 100%;
       height: 100%;
+      transition: all ease-in-out 0.5s;
     }
   }
 
@@ -189,6 +197,22 @@
     }
   }
 
+  .backdrop {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    right: -10000px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all ease-in-out 0.5s;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    @media screen and (max-width: 991.98px) {
+      display: block;
+    }
+  }
+
   .offcanvas-custom {
     margin-top: 64px;
     width: 50%;
@@ -214,7 +238,15 @@
     }
   }
 
-  .full {
-    max-width: 100%;
+  .less {
+    max-width: 50%;
+  }
+  .show-map {
+    max-width: 50%;
+    right: 0;
+  }
+
+  .show-backdrop {
+    right: 100%;
   }
 }

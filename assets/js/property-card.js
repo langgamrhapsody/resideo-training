@@ -6,6 +6,6 @@ if (currentPage === "/") {
   }
 } else if (currentPage === "/property.php") {
   for (let elem of card) {
-    elem.classList.add("col-12", "col-sm-6");
+    elem.classList.add("col-12", "col-sm-4");
   }
 }

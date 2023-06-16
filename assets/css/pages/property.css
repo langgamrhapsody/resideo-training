@@ -13,16 +13,23 @@
   padding: 0;
 }
 .listing-page__col--item {
-  max-width: 50%;
+  max-width: 100%;
   transition: max-width ease-in-out 0.3s;
 }
 @media screen and (max-width: 991.98px) {
   .listing-page__col--item {
-    max-width: 100%;
+    max-width: 100% !important;
   }
 }
 .listing-page__col--map {
+  margin-top: 64px;
+  position: relative;
+  position: absolute;
+  right: -10000px;
+  top: 0;
+  width: 100%;
   height: 100%;
+  transition: all ease-in-out 0.5s;
 }
 .listing-page .property {
   max-height: 100vh;
@@ -150,6 +157,22 @@
   width: 100%;
   height: 100%;
 }
+.listing-page .backdrop {
+  display: none;
+  position: absolute;
+  z-index: 99;
+  right: -10000px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: all ease-in-out 0.5s;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 991.98px) {
+  .listing-page .backdrop {
+    display: block;
+  }
+}
 .listing-page .offcanvas-custom {
   margin-top: 64px;
   width: 50%;
@@ -175,8 +198,15 @@
   border-radius: 50%;
   padding: 12px;
 }
-.listing-page .full {
-  max-width: 100%;
+.listing-page .less {
+  max-width: 50%;
+}
+.listing-page .show-map {
+  max-width: 50%;
+  right: 0;
+}
+.listing-page .show-backdrop {
+  right: 100%;
 }
 
 /*# sourceMappingURL=property.css.map */

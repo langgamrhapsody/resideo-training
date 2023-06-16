@@ -425,6 +425,9 @@
   gap: 12px;
   margin-bottom: 16px;
 }
+.detail__left-school .school-button-container .btn {
+  border: none;
+}
 .detail__left-school-button {
   position: relative;
   color: grey;
@@ -446,11 +449,12 @@
 .detail__left-school-button:hover:after {
   transform: scale(1);
 }
-.detail__left-school .school-button-active {
+.detail__left-school .active {
   position: relative;
   color: black;
+  border: none;
 }
-.detail__left-school .school-button-active:after {
+.detail__left-school .active:after {
   content: "";
   position: absolute;
   left: 0;
@@ -460,6 +464,9 @@
   transform: scale(1);
   transition: all ease-in-out 0.3s;
   background-color: black;
+}
+.detail__left-school .tab-content .active:after {
+  content: unset;
 }
 @media screen and (max-width: 575.98px) {
   .detail__left-school .school-table {

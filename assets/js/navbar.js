@@ -8,3 +8,7 @@ window.addEventListener("scroll", function () {
     scrollButton.classList.remove("footer__button-appear");
   }
 });
+
+if (currentPage === "/") {
+  nav.classList.remove("custom-nav");
+}

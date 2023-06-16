@@ -104,24 +104,22 @@
 
                     </div>
                 </div>
-                <div class="offcanvas offcanvas-end offcanvas-custom" data-bs-backdrop="false" tabindex="-1"
-                    id="offcanvasMap" aria-labelledby="offcanvasRightLabel">
-                    <button id="offcanvas-button" type="button" class="btn offcanvas-custom__btn"
-                        data-bs-dismiss="offcanvas" aria-label="Close">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
-                            <path
-                                d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z" />
-                        </svg>
-                    </button>
 
-                    <div id="property-map" class="listing-page__col--map col-12 ">
-                        <div class="property-map">
-                            <iframe class="property-map__iframe"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.1041217723973!2d115.23787957502128!3d-8.68164788840348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd240f88bb37a69%3A0xdf8443f1fabfe305!2sPT.Timedoor%20Indonesia!5e0!3m2!1sen!2sid!4v1685931131734!5m2!1sen!2sid"
-                                style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
+                <div id="property-map" class="listing-page__col--map col-12 col-lg-6 ">
+                    <div class="property-map">
+                        <iframe class="property-map__iframe"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.1041217723973!2d115.23787957502128!3d-8.68164788840348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd240f88bb37a69%3A0xdf8443f1fabfe305!2sPT.Timedoor%20Indonesia!5e0!3m2!1sen!2sid!4v1685931131734!5m2!1sen!2sid"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <button id="offcanvas-button" type="button" class="btn offcanvas-custom__btn"
+                            data-bs-dismiss="offcanvas" aria-label="Close">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
+                                <path
+                                    d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z" />
+                            </svg>
+                        </button>
                     </div>
+                    <div id="backdrop" class="backdrop"></div>
                 </div>
             </div>
 
