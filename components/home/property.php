@@ -6,7 +6,7 @@
             <div class="featured-properties__content-row row ">
                 <?php include_once "./components/card/property-card.php"; ?>
             </div>
-            <a href="" class="btn section-button featured-properties__button">browse all</a>
+            <a href="/property.php" class="btn section-button featured-properties__button">browse all</a>
             </a>
         </div>
 

@@ -240,24 +240,33 @@
 
 .choose-us {
   position: relative;
+  padding: 200px 0;
+  color: white;
+}
+.choose-us:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/img/services-c-fig-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 991.98px) {
+  .choose-us:before {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .choose-us {
+    padding: 50px 0;
+  }
 }
 .choose-us:hover .choose-us__button:after {
   opacity: 1;
   padding-right: 50px;
-}
-.choose-us__container {
-  padding: 200px 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/img/services-c-fig-2.jpg");
-  background-size: 50%;
-  background-repeat: no-repeat;
-  color: white;
-}
-@media screen and (max-width: 991.98px) {
-  .choose-us__container {
-    padding: 50px 0;
-    background-size: cover;
-    background-position: bottom center;
-  }
 }
 .choose-us__row {
   width: 100%;
@@ -269,6 +278,7 @@
 }
 .choose-us__content {
   color: white;
+  position: relative;
 }
 .choose-us__content-title {
   font-weight: 700;

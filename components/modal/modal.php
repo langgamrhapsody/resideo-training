@@ -2,10 +2,12 @@
     <div class="modal-dialog modal-dialog-centered modal-custom">
         <div class="modal-content">
             <div class="modal-content__header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close modal-content__header-button" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                <h2 class="modal-content__header-title">Welcome Back!</h2>
+
             </div>
             <div class="modal-content__body">
-                <h2 class="modal-content__body-title">Welcome Back!</h2>
                 <form>
                     <label class="modal-content__body-label" for="email">Email</label>
                     <input class="modal-content__body-input" type="email" id="email" name="email"

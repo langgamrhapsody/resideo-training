@@ -1,4 +1,4 @@
-  <?php foreach($properties as $index=>$property) : ?>
+  <?php foreach($properties as $property) : ?>
   <div class="property-card__container ">
       <a href="/detail.php" class="property-card">
           <div class="property-card__image-container">

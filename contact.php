@@ -143,6 +143,8 @@
     </script>
 
     <script src="./assets/js/layout.js"></script>
+    <script src="./assets/js/navbar.js"></script>
+
 
 </body>
 

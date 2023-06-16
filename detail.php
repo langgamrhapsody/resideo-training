@@ -223,7 +223,13 @@
                                     <div class="detail__left-payment-col col-6">
                                         <div class="payment">
                                             <label class="payment__label">Term</label>
-                                            <select class="payment__input--select"></select>
+                                            <select class="payment__input--select">
+                                                <option>coba1</option>
+                                                <option>coba1</option>
+
+                                                <option>coba1</option>
+
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="detail__left-payment-col col-6">
@@ -319,6 +325,8 @@
 
     <script src="./assets/js/layout.js"></script>
     <script src="./assets/js/detail.js"></script>
+    <script src="./assets/js/navbar.js"></script>
+
 
 
 
