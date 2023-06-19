@@ -104,7 +104,6 @@
 
                     </div>
                 </div>
-
                 <div id="property-map" class="listing-page__col--map col-12 col-lg-6 ">
                     <div class="property-map">
                         <iframe class="property-map__iframe"
@@ -119,8 +118,8 @@
                             </svg>
                         </button>
                     </div>
-                    <div id="backdrop" class="backdrop"></div>
                 </div>
+                <div id="backdrop" class="backdrop"></div>
             </div>
 
         </div>

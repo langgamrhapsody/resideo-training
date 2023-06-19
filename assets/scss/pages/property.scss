@@ -29,7 +29,8 @@
       position: relative;
 
       position: absolute;
-      right: -10000px;
+      z-index: 999;
+      right: -9999px;
       top: 0;
       width: 100%;
       height: 100%;
@@ -201,7 +202,7 @@
     display: none;
     position: absolute;
     z-index: 99;
-    right: -10000px;
+    right: -999px;
     top: 0;
     width: 100%;
     height: 100%;
@@ -247,6 +248,6 @@
   }
 
   .show-backdrop {
-    right: 100%;
+    right: 0;
   }
 }
