@@ -206,6 +206,11 @@
   max-width: 50%;
   right: 0;
 }
+@media screen and (max-width: 575.98px) {
+  .listing-page .show-map {
+    max-width: 100%;
+  }
+}
 .listing-page .show-backdrop {
   right: 0;
 }

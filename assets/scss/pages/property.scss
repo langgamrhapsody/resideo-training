@@ -245,6 +245,10 @@
   .show-map {
     max-width: 50%;
     right: 0;
+
+    @media screen and (max-width: 575.98px) {
+      max-width: 100%;
+    }
   }
 
   .show-backdrop {
