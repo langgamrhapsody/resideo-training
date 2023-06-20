@@ -28,17 +28,17 @@
                         <div class="property__container ">
                             <div class="property__header">
                                 <div class="property__row row">
-                                    <div class="property__col col-3">
+                                    <div class="property__col--buy col-5 col-sm-3">
                                         <select class="property__header-select">
                                             <option selected value="buy">Buy</option>
                                             <option value="rent">rent</option>
                                         </select>
                                     </div>
-                                    <div class="property__col col-7 col-lg-8">
+                                    <div class="property__col--search col-10 col-sm-7 col-lg-8">
                                         <input class="property__header-input" type="text" name="search" id="search"
                                             placeholder="Search by City, Neighborhood, or Address">
                                     </div>
-                                    <div class="property__col col-2 col-lg-1">
+                                    <div class="property__col--filter col-2 col-sm-2 col-lg-1">
                                         <button type="button" class="btn property__header-button">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
                                                 <path
@@ -46,12 +46,10 @@
                                             </svg>
                                         </button>
                                     </div>
-                                </div>
-                                <div class="property__row row">
-                                    <div class="property__col col-4 col-sm-7 col-lg-8">
+                                    <div class="property__col--result col-12 col-sm-4 col-sm-7 col-lg-8">
                                         <h1 class="property__body-header-title">1,684 Results</h1>
                                     </div>
-                                    <div class="property__col col-6 col-sm-3">
+                                    <div class="property__col--sort col-5  col-sm-3">
                                         <select class="property__header-select">
                                             <option selected disabled value="">Sort</option>
                                             <option value="">A-Z</option>
@@ -64,7 +62,7 @@
 
                                         </select>
                                     </div>
-                                    <div class="property__col col-2 col-lg-1">
+                                    <div class="property__col--map col-2 col-sm-2 col-lg-1">
                                         <button id="map-button" type="button" class="btn property__header-button"
                                             data-bs-toggle="offcanvas" data-bs-target="#offcanvasMap"
                                             aria-controls="offcanvasMap">
@@ -76,6 +74,7 @@
                                     </div>
                                 </div>
 
+
                             </div>
                             <div class="property__body">
                                 <div class="property__body-content-row row ">
@@ -84,7 +83,7 @@
                                 <nav class="property__body-pagination">
                                     <ul>
                                         <li>
-                                            <a class="btn pagination">1</a>
+                                            <a class="btn pagination pagination-active">1</a>
                                         </li>
                                         <li>
                                             <a class="btn pagination">2</a>
@@ -108,8 +107,7 @@
                     <div class="property-map">
                         <iframe class="property-map__iframe"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.1041217723973!2d115.23787957502128!3d-8.68164788840348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd240f88bb37a69%3A0xdf8443f1fabfe305!2sPT.Timedoor%20Indonesia!5e0!3m2!1sen!2sid!4v1685931131734!5m2!1sen!2sid"
-                            style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         <button id="offcanvas-button" type="button" class="btn offcanvas-custom__btn"
                             data-bs-dismiss="offcanvas" aria-label="Close">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
@@ -119,8 +117,8 @@
                         </button>
                     </div>
                 </div>
-                <div id="backdrop" class="backdrop"></div>
             </div>
+            <div id="backdrop" class="backdrop"></div>
 
         </div>
 

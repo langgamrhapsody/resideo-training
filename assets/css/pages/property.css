@@ -52,9 +52,41 @@
   padding: 0 4px;
   margin-bottom: 8px;
 }
-.listing-page .property__col {
+.listing-page .property__col, .listing-page .property__col--map, .listing-page .property__col--sort, .listing-page .property__col--result, .listing-page .property__col--filter, .listing-page .property__col--search, .listing-page .property__col--buy {
+  display: flex;
+  align-items: center;
   padding: 0 4px;
-  margin: auto;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 575.98px) {
+  .listing-page .property__col--buy {
+    order: 3;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .listing-page .property__col--search {
+    order: 1;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .listing-page .property__col--filter {
+    order: 2;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .listing-page .property__col--result {
+    order: 6;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .listing-page .property__col--sort {
+    order: 4;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .listing-page .property__col--map {
+    order: 5;
+  }
 }
 .listing-page .property__header-input {
   padding: 8px;
@@ -90,23 +122,11 @@
 }
 .listing-page .property__body-header-title {
   font-size: 1.5rem;
-}
-@media screen and (max-width: 480px) {
-  .listing-page .property__body-header-title {
-    font-size: 14px;
-  }
-}
-.listing-page .property__body-content-row {
-  padding-top: 48px;
+  margin: 0;
 }
 @media screen and (max-width: 991.98px) {
   .listing-page .property__body-content-row {
     justify-content: center;
-  }
-}
-@media screen and (max-width: 575.98px) {
-  .listing-page .property__body-content-row {
-    padding-top: 24px;
   }
 }
 .listing-page .property__body-content-item {
@@ -131,6 +151,15 @@
 }
 .listing-page .property__body-pagination ul .pagination:hover {
   background-color: #cccccc;
+}
+.listing-page .property__body-pagination ul .pagination-active {
+  color: white;
+  background-color: black;
+  font-weight: bold;
+}
+.listing-page .property__body-pagination ul .pagination-active:hover {
+  background-color: black;
+  color: white;
 }
 .listing-page .property::-webkit-scrollbar {
   width: 5px;
@@ -162,12 +191,13 @@
   display: none;
   position: absolute;
   z-index: 99;
-  right: -999px;
   top: 0;
   width: 100%;
   height: 100%;
-  transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.3s;
   background-color: rgba(0, 0, 0, 0.3);
+  visibility: hidden;
+  opacity: 0;
 }
 @media screen and (max-width: 991.98px) {
   .listing-page .backdrop {
@@ -212,7 +242,8 @@
   }
 }
 .listing-page .show-backdrop {
-  right: 0;
+  visibility: visible;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=property.css.map */
