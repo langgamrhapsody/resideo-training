@@ -236,7 +236,12 @@
   max-width: 50%;
   right: 0;
 }
-@media screen and (max-width: 575.98px) {
+@media screen and (max-width: 991.98px) {
+  .listing-page .show-map {
+    max-width: 80%;
+  }
+}
+@media screen and (max-width: 767.98px) {
   .listing-page .show-map {
     max-width: 100%;
   }
